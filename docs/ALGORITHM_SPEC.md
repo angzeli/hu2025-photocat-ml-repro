@@ -1,9 +1,15 @@
 # Algorithm specification: published workflow and recoverability
 
-Status: Phase 1. This specification describes Hu et al., *Nature Catalysis* **8**,
+Status: published-workflow specification from Phase 1, with Phase-2 scope clarification.
+This specification describes Hu et al., *Nature Catalysis* **8**,
 126–136 (2025), [DOI 10.1038/s41929-025-01291-z](https://doi.org/10.1038/s41929-025-01291-z).
 It does not claim recovery of the authors' executable workflow. No production MD,
 quantum-chemistry calculation, or neural-network training has been performed here.
+
+The active [Phase-2 scope](ZERO_COMPUTE_ML_REPRODUCTION.md) reproduces and analyzes
+released ML evaluation arrays without new MD, QM, TDDFT or training. Stages below
+describe the authors' pipeline; they are not all required next actions. Independent
+trajectory/label/model generation remains an optional computational extension.
 
 Evidence labels are **DIRECTLY OBSERVED**, **COMPUTED FROM RELEASED DATA**,
 **STRONG INFERENCE**, **SPECULATION**, and **REIMPLEMENTATION CHOICE**. A published

@@ -1,10 +1,17 @@
 # Independent reimplementation contract v1
 
-This is the authoritative contract for future Phase 2+ implementation. It freezes
+This is the authoritative contract for the optional future computational extension. It freezes
 evidence, explicit independent defaults, bounded sensitivities, and stop conditions;
 it does not authorize calculation launch. The [configuration](../configs/reimplementation_v1.yaml)
 mirrors the numerical defaults. The [algorithm specification](ALGORITHM_SPEC.md)
 preserves source inconsistencies; the [compute plan](COMPUTE_PLAN.md) defines staged scope.
+
+The active Phase-2 objective is [zero-new-scientific-compute ML reproduction](ZERO_COMPUTE_ML_REPRODUCTION.md).
+It uses only released predictions, deterministic analysis and an untrained
+architecture specification. The independent training/MD/QM defaults below are not
+needed or executed in that scope, and must not populate the paper-defined
+architecture's unknown fields. New physical inputs, labels or models answer a
+separate optional question; their admission gates remain in force.
 
 All publisher/source files, full extracts and source-derived coordinates remain
 local-only under `orginal/` or `forensics/local_only/`. Future raw scientific inputs,
@@ -176,7 +183,8 @@ tensor; released-table reconstruction continues to use the stored component fram
 
 ## Admission and change control
 
-Phase 2 can implement manifests, parsers, synthetic checks and dry-run input generation.
+An explicitly requested future computational extension can implement manifests,
+parsers, synthetic checks and dry-run input generation.
 Actual pilot execution remains blocked until chemical identity/state, topology/UFF,
 software availability, solvent/root choices and explicit resource/launch approval are
 recorded. A contract revision is required for a scientific choice outside the bounded

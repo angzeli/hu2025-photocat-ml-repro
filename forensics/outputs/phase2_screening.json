@@ -1,0 +1,192 @@
+{
+  "classification": "COMPUTED FROM RELEASED DATA",
+  "sources": {
+    "workbook": "orginal/41929_2025_1291_MOESM11_ESM.xlsx",
+    "sheets": [
+      "Fig.1d",
+      "Fig.1e"
+    ],
+    "SI": "orginal/41929_2025_1291_MOESM1_ESM.pdf",
+    "SI_PDF_pages": [
+      77,
+      78
+    ]
+  },
+  "boundary": "49 compact grid rows; no source coordinates, measurement columns or per-cell source-row sets emitted; no fitting",
+  "screening": {
+    "supplied_points": 34,
+    "all_positive": true,
+    "full_retained_universe": 180,
+    "missing_scores_not_reconstructed": 146,
+    "probe": {
+      "J_gt": 50,
+      "Jstar_gt": 0.01,
+      "count": 7,
+      "status": "compatibility probe, not uniquely identified author thresholds"
+    },
+    "same_set_conditional_intervals": {
+      "J_with_Jstar_fixed_0p01": [
+        32.06871,
+        50.81013
+      ],
+      "Jstar_with_J_fixed_50": [
+        0.00342,
+        0.0137
+      ],
+      "interval_convention": "lower inclusive, upper exclusive; each conditional on the other stated fixed threshold"
+    },
+    "phase0_intervals_reproduced": true,
+    "grid": {
+      "J_thresholds": [
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0
+      ],
+      "Jstar_thresholds": [
+        0.002,
+        0.003,
+        0.005,
+        0.01,
+        0.015,
+        0.02,
+        0.03
+      ],
+      "cells": 49,
+      "count_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 5,
+        "4": 3,
+        "5": 7,
+        "6": 9,
+        "7": 6,
+        "8": 5,
+        "9": 3,
+        "10": 2,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "15": 1,
+        "19": 1,
+        "20": 1
+      },
+      "cells_with_seven_points": 6,
+      "cells_with_same_seven_point_set": 3,
+      "seven_count_different_set_cells": 3,
+      "seven_point_regions_on_sampled_grid": [
+        {
+          "J_threshold_exclusive": 20.0,
+          "Jstar_grid_values_with_count_seven": [],
+          "Jstar_grid_values_with_same_seven_point_set": []
+        },
+        {
+          "J_threshold_exclusive": 30.0,
+          "Jstar_grid_values_with_count_seven": [
+            0.015
+          ],
+          "Jstar_grid_values_with_same_seven_point_set": []
+        },
+        {
+          "J_threshold_exclusive": 40.0,
+          "Jstar_grid_values_with_count_seven": [
+            0.01
+          ],
+          "Jstar_grid_values_with_same_seven_point_set": [
+            0.01
+          ]
+        },
+        {
+          "J_threshold_exclusive": 50.0,
+          "Jstar_grid_values_with_count_seven": [
+            0.005,
+            0.01
+          ],
+          "Jstar_grid_values_with_same_seven_point_set": [
+            0.005,
+            0.01
+          ]
+        },
+        {
+          "J_threshold_exclusive": 60.0,
+          "Jstar_grid_values_with_count_seven": [
+            0.003
+          ],
+          "Jstar_grid_values_with_same_seven_point_set": []
+        },
+        {
+          "J_threshold_exclusive": 70.0,
+          "Jstar_grid_values_with_count_seven": [
+            0.003
+          ],
+          "Jstar_grid_values_with_same_seven_point_set": []
+        },
+        {
+          "J_threshold_exclusive": 80.0,
+          "Jstar_grid_values_with_count_seven": [],
+          "Jstar_grid_values_with_same_seven_point_set": []
+        }
+      ],
+      "scope": "sampled threshold coordinates only; not an exhaustive continuous-region map or experimental outcome optimization"
+    },
+    "selected_identity_set": [
+      "CAT1_PS1",
+      "CAT37_PS41",
+      "CAT49_PS1",
+      "CAT49_PS18",
+      "CAT49_PS33",
+      "CAT50_PS41",
+      "CAT61_PS4"
+    ],
+    "identity_set_evidence": "DIRECTLY OBSERVED: SI Table 3 filtered group",
+    "star_mapping": {
+      "source_row": 2,
+      "identity": "CAT1_PS1",
+      "classification": "STRONG INFERENCE",
+      "evidence": "Phase-0 article Fig1 star/best-system cross-source anchor; unique largest-Jstar row rechecked"
+    },
+    "remaining_selected_point_identities": "six unresolved; no ordering imposed from Table 3"
+  },
+  "experimental_validation": {
+    "SI_total_including_unmeasured": 44,
+    "measured_filtered": 6,
+    "measured_ruled_out": 37,
+    "workbook_SI_measured_value_discrepancies": 0,
+    "unmeasured_selected_identity": "CAT50_PS41",
+    "conditional_ruled_out_success": "CAT61_PS33",
+    "declared_arithmetic": {
+      "precision_numerator": 6,
+      "precision_denominator": 6,
+      "precision": 1.0,
+      "recall_numerator": 6,
+      "recall_denominator": 7,
+      "recall": 0.8571428571428571
+    },
+    "unmeasured_denominator_reason": "CAT50/PS41 was not synthesized/measured; it is not an observed false positive and is outside measured precision",
+    "conditional_good_probe": {
+      "rule": "TON_CO > 1370 AND CO selectivity (%) > 72",
+      "tp": 6,
+      "fp": 0,
+      "fn": 1,
+      "tn": 36,
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "status": "compatible but not uniquely recovered author classifier"
+    },
+    "conditional_good_same_set_intervals": {
+      "TON_with_selectivity_fixed_72": [
+        1155.0,
+        1404.0
+      ],
+      "selectivity_with_TON_fixed_1370": [
+        70.4,
+        73.2
+      ],
+      "interval_convention": "lower inclusive, upper exclusive; conditional one-axis intervals, not a joint rectangle"
+    },
+    "scope": "43 experimentally measured identities only; no recall claim over 180 or 3444 systems"
+  }
+}

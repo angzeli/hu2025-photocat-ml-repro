@@ -1,4 +1,4 @@
-# Phase-0/1 reproducibility matrix
+# Phase-0/1/2 reproducibility matrix
 
 Scope: supplied local evidence under `orginal/`, checked 2026-09-13. `EXACT` means
 recoverable as released, not independently regenerated from physics or training.
@@ -12,7 +12,10 @@ All refer to filenames in [the manifest](../../data/manifests/original-files.csv
 Detailed evidence: [main report](PHASE0_DATA_FORENSICS.md),
 [workbook audit](WORKBOOK_ML_AUDIT.md), [methods audit](PAPER_METHODS_AUDIT.md),
 [structure audit](STRUCTURE_INVENTORY.md),
-[Phase-1 coupling reconstruction](PHASE1_COUPLING_RECONSTRUCTION.md).
+[Phase-1 coupling reconstruction](PHASE1_COUPLING_RECONSTRUCTION.md),
+[Phase-2 zero-compute ML reproduction](PHASE2_ZERO_COMPUTE_ML_REPRODUCTION.md).
+The active scope reproduces released ML evaluation and algebra; new trajectories,
+quantum labels and training are an optional computational extension.
 
 | Pipeline object | Needed for reproduction | Released? | Exact source | Recoverability | Confidence | Notes |
 |---|---|---|---|---|---|---|
@@ -29,15 +32,20 @@ Detailed evidence: [main report](PHASE0_DATA_FORENSICS.md),
 | DFT intrinsic dipole labels | Target Y | Yes, plotted values | D Figs.5/6 train A/F/K, test C/H/M | EXACT | High for arrays | 1,000×3 per species; geometry/unit linkage missing |
 | DFT transition dipole labels | Target Y* | Yes, plotted values | D Figs.7/8 same layout | EXACT | High for arrays | 1,000×3 per species; root/state details incomplete |
 | ML dipole predictions | Prediction-statistic reproduction | Yes | D Figs.5–8 train B/G/L, test D/I/N | EXACT | High for arrays | Predictions available without model weights |
+| Scalar/vector prediction metrics | Evaluate released predictions | Computable from arrays | D Figs.5–8; phase2_ml_vectors.json | EXACT under declared definitions | High | All32 Phase-0 scalar records reproduced; magnitude/angle/residual summaries added with explicit near-zero masks; pooled components are not independent conformations |
+| Analytical coupling-error propagation | Attribute errors within released vectors | Computable from aligned arrays | D Figs.5–9; phase2_error_propagation.json | EXACT algebraically | High | CAT/PS/cross and Cartesian terms close to arithmetic precision; signed covariance retained; separately rounded Fig.9 retains small residuals |
 | Train/test split | Refit exact author model | Plotted membership only | D Figs.5–8 rows4:903/4:103 | PARTIAL | High | Exactly900/100; no original sample-index file or seed |
 | Numerical row alignment | Recombine released dipoles | Algebraic evidence | D Figs.5–9; ml_analysis.json | INFERABLE | Strong blockwise | Intrinsic pair→J and transition pair→J* strongly supported; common physical geometry only plausible |
 | Calculated coupling | Validate recombination | Yes | D Fig.9 A3:A1002,D3:D1002 | EXACT | High for arrays | 1,000 values per coupling, signed, units unknown |
 | Predicted coupling | Validate recombination | Yes | D Fig.9 B3:B1002,E3:E1002 | EXACT | High for arrays | 1,000 per coupling; correlations independently recomputed |
+| Validation-row sign/rank fidelity | Evaluate released J/J* predictions | Computable | D Fig.9; coupling_rank_metrics.csv | EXACT under declared ranks/ties | High | Spearman/Kendall/top-k are for validation rows, not180 photocatalytic identities |
 | Final pair-level J/J* values | Reproduce all 180 screening scores | Partially | F Fig.1d A2:B35 | PARTIAL | High for 34 points | Only34 numeric pairs; identities largely missing |
 | Fig.1d candidate IDs | Score-to-identity ranking | Selected set only | S Table3 PDF77–78; M Fig.1 PDF2 | PARTIAL | Mixed | Seven identities exact as a set; one row mapping high-confidence; six unresolved |
 | Screening thresholds | Selection rule | First stage explicit; coupling unclear | S Figs.1/2; F Fig.1d | PARTIAL | High/conditional | 50 and 0.01 yield7 points but are not uniquely identifiable settings |
+| Threshold sensitivity | Quantify released-map ambiguity | Computable for34points | F Fig.1d; screening_sensitivity.csv | EXACT for chosen grid | High/conditional | Six of49cells select7points, only3 preserve the probe's membership; conditional intervals are not a joint rectangle |
 | Experimental validation table | Outcome audit | Yes | F Fig.1e A2:D44; S Table3 PDF77–78 | EXACT | High | Six filtered+37 ruled-out; one additional unsynthesized selected identity |
 | Numerical definition of experimentally good | Independent precision/recall | Not unique | M PDF3; F Fig.1e; S Table3 | UNKNOWN | High uncertainty | Joint1370/72 rule is compatible, not uniquely recovered |
+| Declared measured-set precision/recall | Reproduce reported arithmetic | Yes | M PDF3; F Fig.1e; S Table3; phase2_screening.json | EXACT for declared classes | High | 6/6 and6/7; CAT50/PS41 remains unmeasured; no universe-wide recall claim |
 | Aggregation rule | Conformation→pair score | Described only as statistical average | M PDF8 and ED Fig.3 PDF14 | UNKNOWN | High uncertainty | Signed mean, mean magnitude, absolute signed mean, RMS unranked |
 | Released coupling tensor and scalar | Recombine validation arrays | Numerically reconstructable | D Figs.5–9; phase1_coupling.json | INFERABLE | Overwhelming numerical support | First900 calculated intrinsic fit gives s=5.034063649307054; x tensor held fixed across all four channels; rounding-compatible, not bitwise identity |
 | Separation axis in released component labels | Interpret tensor | Not explicitly documented | Phase-1 x/y/z and 48 sign/permutation probes | INFERABLE | Strong | x overwhelmingly favored; ±x, common transverse rotations and equivalent axis relabellings unidentifiable |
@@ -45,6 +53,7 @@ Detailed evidence: [main report](PHASE0_DATA_FORENSICS.md),
 | Effective fixed separation in validation transform | Interpret common scalar | Numerically conditional | Phase-1 physical/rounding analysis | INFERABLE | Strong under stated units | Debye/cm−1 and vacuum give10.00003503953813Å; exactly10Å with modern constants falls outside conditional5dp bounds |
 | Actual MD separation/standardization | Connect trajectories to tensor | No per-row geometry link | Released endpoints and validation arrays | UNKNOWN | High uncertainty | Fixed-axis tensor does not distinguish fixed geometry, standardized frame/distance or an equivalent convention |
 | Exact model architecture | Exact retraining | Partial description | M ML protocol PDF8 | PARTIAL | High for disclosures | Two hidden ReLU layers and 3-output description; model count/input dimension ambiguous |
+| Disclosed architecture family | Represent published constraints | Partial specification | M ML protocol PDF8; ml_architecture.py | PARTIAL | High for disclosed fields | Disclosed family implemented without framework/weights/training; unknowns remain explicit and caller choices are separate from author facts |
 | Exact selected width | Exact retraining | No | M PDF8 gives256/512/1024 choices | ABSENT | High for audited files | Chosen layers/model widths and criterion missing |
 | Training hyperparameters | Exact retraining | Partial | M PDF8 | PARTIAL | High | Adam lr1e−4 and L1 named; loss/coefficient/batch/epochs/seed missing |
 | Exact atom-selection schema | Reconstruct X | General concept only | M PDF8 | PARTIAL | High | Metal and surrounding atoms; no indices/radius/order/padding |
@@ -59,3 +68,5 @@ Only34 plotted pair-score rows are supplied against180 retained systems; treatin
 that as coverage assumes distinct system-level points, whose IDs are unavailable.
 There is no defensible single percentage for end-to-end reproduction: the missing
 X/trajectory/aggregation contracts prevent exact retraining and full screening.
+Those gaps do not prevent the current source-data evaluation/error-propagation
+scope and do not make MD/DFT/TDDFT necessary for that scope.

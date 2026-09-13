@@ -1,9 +1,13 @@
-# Future compute plan
+# OPTIONAL FULL COMPUTATIONAL REPRODUCTION
 
-Status: design only. No plan in this file has been executed. The target is independent
-scientific algorithm reproduction, not exact regeneration of the undisclosed author
-models. Settings and stop conditions are in [the contract](REIMPLEMENTATION_CONTRACT.md)
-and [configuration](../configs/reimplementation_v1.yaml).
+Status: optional design only; outside the current zero-new-scientific-compute scope.
+No plan in this file has been executed. Phase 2 reproduces released ML metrics,
+vector errors, coupling-error propagation and screening arithmetic without MD/QM,
+TDDFT or training; see [the current scope](ZERO_COMPUTE_ML_REPRODUCTION.md).
+This retained extension would independently regenerate physical inputs and models,
+not recover the undisclosed author training run. Settings and stop conditions remain
+in [the contract](REIMPLEMENTATION_CONTRACT.md) and
+[configuration](../configs/reimplementation_v1.yaml). It is not the default next task.
 
 ## Pilot before either full path
 

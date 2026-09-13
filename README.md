@@ -5,12 +5,13 @@ Independent reproduction and forensic reimplementation project for Hu et al.,
 descriptor-based high-throughput screening”, *Nature Catalysis* **8**, 126–136
 (2025). [Original article and DOI](https://doi.org/10.1038/s41929-025-01291-z).
 
-**Phase 0 is complete; Phase 1 reconstructs and freezes the algorithm.** The
-descriptor screen, released prediction statistics and validation coupling tensor
-have been reconstructed. No production MD, DFT/QM calculation or neural-network
-training has run. Exact author-model reproduction remains impossible because the
-original inputs, weights and complete settings are unavailable; independent
-scientific algorithm reproduction is the project target.
+**Phase 2 reproduces the released ML evaluation without new scientific compute.**
+Phases 0 and 1 established the evidence and reconstructed the coupling transform.
+The current target is prediction-metric verification, vector-error analysis, exact
+coupling-error propagation, validation-row ranking and screening/validation arithmetic.
+No MD, QM, TDDFT or neural-network training is needed for this source-data scope.
+Original inputs, weights and complete settings remain unavailable, so this does not
+claim exact author-model retraining or independent physical label generation.
 
 ## Local evidence and redistribution boundary
 
@@ -36,8 +37,8 @@ IDs, computed metrics and forensic reports. A clone alone does not include input
 - `forensics/local_only/`: complete numeric extractions, ignored and never distributable.
 - `docs/`: algorithm specification, independent contract, compute plan and provenance.
 - `configs/`: explicit future-compute settings and unresolved inputs; no launch authority.
-- `src/hu2025_repro/`: physical dipole-coupling and aggregation functions.
-- `tests/`: entirely synthetic coupling checks.
+- `src/hu2025_repro/`: coupling, ML evaluation/error analysis and an untrained architecture specification.
+- `tests/`: entirely synthetic numerical and architecture checks.
 
 Start with [Phase-0 data forensics](forensics/reports/PHASE0_DATA_FORENSICS.md),
 the [reproducibility matrix](forensics/reports/REPRODUCIBILITY_MATRIX.md), and
@@ -48,6 +49,13 @@ Phase 1: [coupling reconstruction](forensics/reports/PHASE1_COUPLING_RECONSTRUCT
 [authoritative reimplementation contract](docs/REIMPLEMENTATION_CONTRACT.md),
 [configuration](configs/reimplementation_v1.yaml), and [future compute plan](docs/COMPUTE_PLAN.md).
 The near-10 Å Debye/cm⁻¹ interpretation is conditional and not uniquely identified.
-The next task is pilot input preparation and dry-run validation; chemistry, state,
-parameter and launch gates remain. Neither phase establishes end-to-end reproduction
-or scientific validation of the paper's model.
+
+Phase 2: [scope and rerun guide](docs/ZERO_COMPUTE_ML_REPRODUCTION.md),
+[ML reproduction report](forensics/reports/PHASE2_ZERO_COMPUTE_ML_REPRODUCTION.md), and
+[claim scorecard](forensics/reports/ML_CLAIM_SCORECARD.md). These distinguish exact
+source-data arithmetic, algorithmic implementations, partial screening recovery and
+irreducible missing evidence. Validation-row rankings are not rankings of the 180 systems.
+
+The retained compute plan is **OPTIONAL FULL COMPUTATIONAL REPRODUCTION**. It is
+outside the present objective and grants no launch authority. Reproducing released
+predictions does not establish independent model transferability or physical validity.

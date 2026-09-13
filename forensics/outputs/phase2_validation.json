@@ -1,0 +1,85 @@
+{
+  "record_type": "Phase-2 validation snapshot assembled from completed checks, before the local commit",
+  "date": "2026-09-13",
+  "starting_head": "8d672db7a56cbe2be533ebb8f8c77cfbd5fbe77d",
+  "starting_branch": "main",
+  "starting_upstream": "origin/main",
+  "starting_remote_main_matches": true,
+  "synthetic_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -v",
+    "passed": 28,
+    "failed": 0,
+    "framework_required": false
+  },
+  "lightweight_analysis_scripts_completed": [
+    "forensics/scripts/analyze_ml_vectors.py",
+    "forensics/scripts/analyze_error_propagation.py",
+    "forensics/scripts/analyze_screening_sensitivity.py"
+  ],
+  "summary_consistency": {
+    "summary_csv_rows_checked": {
+      "ml_scalar_metrics": 32,
+      "ml_vector_metrics": 24,
+      "ml_error_propagation": 120,
+      "coupling_rank_metrics": 6,
+      "screening_sensitivity": 49
+    },
+    "phase0_scalar_rows_independently_matched": 32,
+    "frozen_scalar_unchanged": true,
+    "scalar_refitted": false,
+    "error_blocks_verified": 6,
+    "exact_decomposition_and_magnitude_direction_closure": true,
+    "covariance_and_bias_mse_closure": true,
+    "second_order_and_x_weight_mse_identities": true,
+    "new_module_static_zero_compute_audit": [
+      "src/hu2025_repro/ml_metrics.py",
+      "src/hu2025_repro/error_propagation.py",
+      "src/hu2025_repro/ml_architecture.py",
+      "forensics/scripts/analyze_ml_vectors.py",
+      "forensics/scripts/analyze_error_propagation.py",
+      "forensics/scripts/analyze_screening_sensitivity.py"
+    ],
+    "all_rank_overlap_columns_match_JSON": true
+  },
+  "original_integrity": {
+    "original_file_count": 6901,
+    "original_bytes": 85541434,
+    "manifest_hashes_and_sizes_match": true,
+    "pre_analysis_hashes_sizes_mtimes_match": true,
+    "original_subtree_fully_ignored": true
+  },
+  "source_privacy_preparation_audit": {
+    "reachable_commits_checked": 3,
+    "commit_reachable_blobs_checked": 55,
+    "committed_path_occurrences_checked": 95,
+    "proposed_files_checked_before_this_snapshot": 72,
+    "source_or_sensitive_findings": [],
+    "scope": "Existing history, index and proposed nonignored files; this snapshot and final commit receive separate staged/postcommit audits.",
+    "scanner_limitation": "Pattern/type/hash/schema checks plus manual review; no universal secret or transformed-source detection guarantee."
+  },
+  "independent_review": {
+    "numeric_modules_and_synthetic_tests": "passed",
+    "architecture_and_screening_boundaries": "passed",
+    "report_tables_against_JSON_CSV": "passed after two wording corrections"
+  },
+  "zero_new_scientific_compute": {
+    "MD_jobs_launched": 0,
+    "QM_or_TDDFT_jobs_launched": 0,
+    "new_labels_or_trajectories": 0,
+    "ML_models_trained": 0,
+    "optimizer_steps": 0,
+    "GPU_or_external_compute_calls": 0,
+    "frameworks_or_dependencies_installed": 0,
+    "evidence": "Executed commands were read-only source/metadata access, deterministic analysis, tests, documentation and Git inspection; six new scientific analysis/specification modules were statically inspected for training/framework/job entry points."
+  },
+  "publication": {
+    "push_authorized_in_this_phase": false,
+    "push_performed": false,
+    "public_history_rewritten": false
+  },
+  "limitations": [
+    "No claim of independent vector-row sampling or chemical transfer.",
+    "Closure is exact for reconstructed dipole coupling; separate Fig.9 columns retain source-precision-compatible residuals.",
+    "Author units/frame/preprocessing/training/aggregation remain unresolved."
+  ]
+}
