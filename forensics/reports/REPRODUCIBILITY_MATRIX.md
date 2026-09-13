@@ -1,4 +1,4 @@
-# Phase-0 reproducibility matrix
+# Phase-0/1 reproducibility matrix
 
 Scope: supplied local evidence under `orginal/`, checked 2026-09-13. `EXACT` means
 recoverable as released, not independently regenerated from physics or training.
@@ -11,7 +11,8 @@ Source shorthand: **M** = article PDF; **S** = SI PDF; **D** = MOESM2 workbook;
 All refer to filenames in [the manifest](../../data/manifests/original-files.csv).
 Detailed evidence: [main report](PHASE0_DATA_FORENSICS.md),
 [workbook audit](WORKBOOK_ML_AUDIT.md), [methods audit](PAPER_METHODS_AUDIT.md),
-[structure audit](STRUCTURE_INVENTORY.md).
+[structure audit](STRUCTURE_INVENTORY.md),
+[Phase-1 coupling reconstruction](PHASE1_COUPLING_RECONSTRUCTION.md).
 
 | Pipeline object | Needed for reproduction | Released? | Exact source | Recoverability | Confidence | Notes |
 |---|---|---|---|---|---|---|
@@ -38,7 +39,11 @@ Detailed evidence: [main report](PHASE0_DATA_FORENSICS.md),
 | Experimental validation table | Outcome audit | Yes | F Fig.1e A2:D44; S Table3 PDF77–78 | EXACT | High | Six filtered+37 ruled-out; one additional unsynthesized selected identity |
 | Numerical definition of experimentally good | Independent precision/recall | Not unique | M PDF3; F Fig.1e; S Table3 | UNKNOWN | High uncertainty | Joint1370/72 rule is compatible, not uniquely recovered |
 | Aggregation rule | Conformation→pair score | Described only as statistical average | M PDF8 and ED Fig.3 PDF14 | UNKNOWN | High uncertainty | Signed mean, mean magnitude, absolute signed mean, RMS unranked |
-| Dipole/coupling units | Physically meaningful errors and scores | Not located | M equations3/4; S Figs.5–9; D/F labels | UNKNOWN | High uncertainty | No assignment of Debye/eV/meV/cm−1 based on scale |
+| Released coupling tensor and scalar | Recombine validation arrays | Numerically reconstructable | D Figs.5–9; phase1_coupling.json | INFERABLE | Overwhelming numerical support | First900 calculated intrinsic fit gives s=5.034063649307054; x tensor held fixed across all four channels; rounding-compatible, not bitwise identity |
+| Separation axis in released component labels | Interpret tensor | Not explicitly documented | Phase-1 x/y/z and 48 sign/permutation probes | INFERABLE | Strong | x overwhelmingly favored; ±x, common transverse rotations and equivalent axis relabellings unidentifiable |
+| Likely dipole/coupling units | Physically meaningful errors and scores | Not explicitly located | M equations3/4; D/F labels; independent constants | INFERABLE | Conditional | Debye/cm−1 with near10Å is a natural hypothesis; Debye/meV near5Å and atomic-unit alternatives also plausible; exact author units remain UNKNOWN |
+| Effective fixed separation in validation transform | Interpret common scalar | Numerically conditional | Phase-1 physical/rounding analysis | INFERABLE | Strong under stated units | Debye/cm−1 and vacuum give10.00003503953813Å; exactly10Å with modern constants falls outside conditional5dp bounds |
+| Actual MD separation/standardization | Connect trajectories to tensor | No per-row geometry link | Released endpoints and validation arrays | UNKNOWN | High uncertainty | Fixed-axis tensor does not distinguish fixed geometry, standardized frame/distance or an equivalent convention |
 | Exact model architecture | Exact retraining | Partial description | M ML protocol PDF8 | PARTIAL | High for disclosures | Two hidden ReLU layers and 3-output description; model count/input dimension ambiguous |
 | Exact selected width | Exact retraining | No | M PDF8 gives256/512/1024 choices | ABSENT | High for audited files | Chosen layers/model widths and criterion missing |
 | Training hyperparameters | Exact retraining | Partial | M PDF8 | PARTIAL | High | Adam lr1e−4 and L1 named; loss/coefficient/batch/epochs/seed missing |

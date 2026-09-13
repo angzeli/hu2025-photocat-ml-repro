@@ -1,0 +1,1211 @@
+{
+  "source": "orginal/41929_2025_1291_MOESM2_ESM.xlsx",
+  "classification": "COMPUTED FROM RELEASED DATA",
+  "array_storage": "Source arrays exist in memory only; output contains aggregate statistics and hypotheses.",
+  "row_layout": "Figs 5-8: 900 train rows A/F/K or B/G/L, then 100 test rows C/H/M or D/I/N, starting row 4. Fig9: A/B/D/E rows 3:1002.",
+  "tensor": "q = -2*CAT_x*PS_x + CAT_y*PS_y + CAT_z*PS_z",
+  "scalar": 5.034063649307054,
+  "fit_contract": "Zero intercept; first 900 calculated intrinsic rows only; one scalar fixed for every other row and channel.",
+  "metric_convention": "Residual=reconstructed-source. R2=1-SSE/SST; each block uses its own observed mean.",
+  "axis_tests": [
+    {
+      "axis": "x",
+      "weights": [
+        -2.0,
+        1.0,
+        1.0
+      ],
+      "fitted_scalar": 5.034063649307054,
+      "positive_physical_scalar": true,
+      "first_900": {
+        "n_rows": 900,
+        "r2": 0.999999999999592,
+        "rmse": 0.00034680345170146754,
+        "mae": 0.0002695877697883994,
+        "mean_signed_residual": 2.68806566681203e-05,
+        "max_absolute_residual": 0.00211157864487177,
+        "absolute_residual_quantiles": {
+          "0.5": 0.00023331662019643318,
+          "0.9": 0.0005188933533077034,
+          "0.95": 0.0006476802858756514,
+          "0.99": 0.001047445703603671
+        },
+        "residual_correlation_with_observed": -0.0025896639101069506
+      },
+      "last_100": {
+        "n_rows": 100,
+        "r2": 0.9999999999996879,
+        "rmse": 0.0003032565512391034,
+        "mae": 0.00024163964142259075,
+        "mean_signed_residual": -8.097776101539722e-05,
+        "max_absolute_residual": 0.0008218964387651795,
+        "absolute_residual_quantiles": {
+          "0.5": 0.00019386639966079144,
+          "0.9": 0.0004843225470722248,
+          "0.95": 0.0006339034593551673,
+          "0.99": 0.0008174705165674823
+        },
+        "residual_correlation_with_observed": -0.298311550549057
+      },
+      "all_1000": {
+        "n_rows": 1000,
+        "r2": 0.9999999999996017,
+        "rmse": 0.0003426978615162201,
+        "mae": 0.00026679295695181853,
+        "mean_signed_residual": 1.609481489976855e-05,
+        "max_absolute_residual": 0.00211157864487177,
+        "absolute_residual_quantiles": {
+          "0.5": 0.0002300378273432102,
+          "0.9": 0.0005180204161945312,
+          "0.95": 0.0006476802858756514,
+          "0.99": 0.0010404888092307373
+        },
+        "residual_correlation_with_observed": -0.02934687995201939
+      }
+    },
+    {
+      "axis": "y",
+      "weights": [
+        1.0,
+        -2.0,
+        1.0
+      ],
+      "fitted_scalar": -3.7840515224200177,
+      "positive_physical_scalar": false,
+      "first_900": {
+        "n_rows": 900,
+        "r2": 0.4915864580233381,
+        "rmse": 387.13276787367755,
+        "mae": 214.5208450443777,
+        "mean_signed_residual": 4.735978685570943,
+        "max_absolute_residual": 4910.974343717692,
+        "absolute_residual_quantiles": {
+          "0.5": 105.77762487162346,
+          "0.9": 544.2268398206899,
+          "0.95": 771.1098106303997,
+          "0.99": 1355.0192757237544
+        },
+        "residual_correlation_with_observed": -0.7134920266586922
+      },
+      "last_100": {
+        "n_rows": 100,
+        "r2": 0.6596095777430773,
+        "rmse": 316.69957405411924,
+        "mae": 205.2326651899317,
+        "mean_signed_residual": 8.566669352427322,
+        "max_absolute_residual": 1068.6903062551125,
+        "absolute_residual_quantiles": {
+          "0.5": 102.69520395417725,
+          "0.9": 546.290423166226,
+          "0.95": 813.7167305950194,
+          "0.99": 998.0187123548747
+        },
+        "residual_correlation_with_observed": -0.8968673787504305
+      },
+      "all_1000": {
+        "n_rows": 1000,
+        "r2": 0.5085117707812202,
+        "rmse": 380.67632443584836,
+        "mae": 213.59202705893304,
+        "mean_signed_residual": 5.11904775225658,
+        "max_absolute_residual": 4910.974343717692,
+        "absolute_residual_quantiles": {
+          "0.5": 105.33890023930513,
+          "0.9": 546.1190043664309,
+          "0.95": 771.292024988656,
+          "0.99": 1320.172853802416
+        },
+        "residual_correlation_with_observed": -0.7274922131070267
+      }
+    },
+    {
+      "axis": "z",
+      "weights": [
+        1.0,
+        1.0,
+        -2.0
+      ],
+      "fitted_scalar": -3.0952215273786132,
+      "positive_physical_scalar": false,
+      "first_900": {
+        "n_rows": 900,
+        "r2": 0.21142068594778274,
+        "rmse": 482.14100408281524,
+        "mae": 264.39086317459555,
+        "mean_signed_residual": -25.6272720010927,
+        "max_absolute_residual": 3408.9359005614406,
+        "absolute_residual_quantiles": {
+          "0.5": 109.96786131442315,
+          "0.9": 725.9981734014111,
+          "0.95": 1147.3249209764626,
+          "0.99": 1994.2445542492808
+        },
+        "residual_correlation_with_observed": -0.8875043741618184
+      },
+      "last_100": {
+        "n_rows": 100,
+        "r2": 0.34051076676339165,
+        "rmse": 440.8213987838169,
+        "mae": 267.3629842409054,
+        "mean_signed_residual": -64.09639368956657,
+        "max_absolute_residual": 1537.424507331344,
+        "absolute_residual_quantiles": {
+          "0.5": 106.21519264190088,
+          "0.9": 864.1531178008154,
+          "0.95": 987.7225527254551,
+          "0.99": 1463.8007502731657
+        },
+        "residual_correlation_with_observed": -0.964901068298187
+      },
+      "all_1000": {
+        "n_rows": 1000,
+        "r2": 0.22452898225507734,
+        "rmse": 478.16974349989863,
+        "mae": 264.68807528122653,
+        "mean_signed_residual": -29.47418416994009,
+        "max_absolute_residual": 3408.9359005614406,
+        "absolute_residual_quantiles": {
+          "0.5": 109.96786131442315,
+          "0.9": 745.7328772083387,
+          "0.95": 1116.5534884917722,
+          "0.99": 1976.590357347633
+        },
+        "residual_correlation_with_observed": -0.8942322223836324
+      }
+    }
+  ],
+  "sign_permutation_tests": {
+    "candidate_count": 48,
+    "selection_uses": "first 900 calculated J only",
+    "definition": "All six PS-only component permutations and eight relative sign patterns; fixed x tensor and one signed scalar each",
+    "best_four": [
+      {
+        "ps_component_order": "xyz",
+        "ps_component_signs": [
+          -1,
+          -1,
+          -1
+        ],
+        "fitted_scalar": -5.034063649307054,
+        "first_900_rmse": 0.00034680345170146754,
+        "last_100_rmse": 0.0003032565512391034
+      },
+      {
+        "ps_component_order": "xyz",
+        "ps_component_signs": [
+          1,
+          1,
+          1
+        ],
+        "fitted_scalar": 5.034063649307054,
+        "first_900_rmse": 0.00034680345170146754,
+        "last_100_rmse": 0.0003032565512391034
+      },
+      {
+        "ps_component_order": "xyz",
+        "ps_component_signs": [
+          -1,
+          -1,
+          1
+        ],
+        "fitted_scalar": -4.886987793947822,
+        "first_900_rmse": 178.21816759315496,
+        "last_100_rmse": 114.11762898311797
+      },
+      {
+        "ps_component_order": "xyz",
+        "ps_component_signs": [
+          1,
+          1,
+          -1
+        ],
+        "fitted_scalar": 4.886987793947822,
+        "first_900_rmse": 178.21816759315496,
+        "last_100_rmse": 114.11762898311797
+      }
+    ],
+    "positive_scalar_best": {
+      "ps_component_order": "xyz",
+      "ps_component_signs": [
+        1,
+        1,
+        1
+      ],
+      "fitted_scalar": 5.034063649307054,
+      "first_900_rmse": 0.00034680345170146754,
+      "last_100_rmse": 0.0003032565512391034
+    },
+    "equivalences": [
+      "+x and -x separation are identical because the tensor depends on r r^T.",
+      "Simultaneously reversing either Cartesian component in both dipoles leaves its product unchanged.",
+      "Simultaneously swapping y and z, or applying any common rotation in the yz plane, preserves the x tensor.",
+      "An overall relative dipole sign can be absorbed by a signed fitted scalar; physical positive conversion fixes this convention.",
+      "A simultaneous relabelling of axes and separation gives the same physical tensor; x refers to the released component labels."
+    ]
+  },
+  "channels": {
+    "J_calculated": {
+      "first_900": {
+        "n_rows": 900,
+        "r2": 0.999999999999592,
+        "rmse": 0.00034680345170146754,
+        "mae": 0.0002695877697883994,
+        "mean_signed_residual": 2.68806566681203e-05,
+        "max_absolute_residual": 0.00211157864487177,
+        "absolute_residual_quantiles": {
+          "0.5": 0.00023331662019643318,
+          "0.9": 0.0005188933533077034,
+          "0.95": 0.0006476802858756514,
+          "0.99": 0.001047445703603671
+        },
+        "residual_correlation_with_observed": -0.0025896639101069506
+      },
+      "last_100": {
+        "n_rows": 100,
+        "r2": 0.9999999999996879,
+        "rmse": 0.0003032565512391034,
+        "mae": 0.00024163964142259075,
+        "mean_signed_residual": -8.097776101539722e-05,
+        "max_absolute_residual": 0.0008218964387651795,
+        "absolute_residual_quantiles": {
+          "0.5": 0.00019386639966079144,
+          "0.9": 0.0004843225470722248,
+          "0.95": 0.0006339034593551673,
+          "0.99": 0.0008174705165674823
+        },
+        "residual_correlation_with_observed": -0.298311550549057
+      },
+      "all_1000": {
+        "n_rows": 1000,
+        "r2": 0.9999999999996017,
+        "rmse": 0.0003426978615162201,
+        "mae": 0.00026679295695181853,
+        "mean_signed_residual": 1.609481489976855e-05,
+        "max_absolute_residual": 0.00211157864487177,
+        "absolute_residual_quantiles": {
+          "0.5": 0.0002300378273432102,
+          "0.9": 0.0005180204161945312,
+          "0.95": 0.0006476802858756514,
+          "0.99": 0.0010404888092307373
+        },
+        "residual_correlation_with_observed": -0.02934687995201939
+      },
+      "rounding_bounds": {
+        "literal_xml_last_digit": {
+          "within_bound": 435,
+          "outside_bound": 565,
+          "first_900_outside_bound": 505,
+          "last_100_outside_bound": 60,
+          "max_first_order_coupling_bound": 4.31491972046732,
+          "max_cross_term_coupling_bound": 1.2849447464856258e-07,
+          "max_total_bound": 4.314969720467896,
+          "median_total_bound": 0.00013581855750210755,
+          "max_residual_to_bound_ratio": 1864379854.6709328
+        },
+        "uniform_5dp_nearest": {
+          "within_bound": 1000,
+          "outside_bound": 0,
+          "first_900_outside_bound": 0,
+          "last_100_outside_bound": 0,
+          "max_first_order_coupling_bound": 0.0041682026880007815,
+          "max_cross_term_coupling_bound": 5.034063649307055e-10,
+          "max_total_bound": 0.004173203381175997,
+          "median_total_bound": 0.0007779536705042576,
+          "max_residual_to_bound_ratio": 0.8547813335665948
+        },
+        "uniform_5dp_truncation": {
+          "within_bound": 1000,
+          "outside_bound": 0,
+          "first_900_outside_bound": 0,
+          "last_100_outside_bound": 0,
+          "max_first_order_coupling_bound": 0.008336405376001563,
+          "max_cross_term_coupling_bound": 2.013625459722822e-09,
+          "max_total_bound": 0.008346407579395872,
+          "median_total_bound": 0.001555908344279153,
+          "max_residual_to_bound_ratio": 0.42739033494931233
+        },
+        "mixed_5dp_3significant_digit_nearest": {
+          "within_bound": 1000,
+          "outside_bound": 0,
+          "first_900_outside_bound": 0,
+          "last_100_outside_bound": 0,
+          "max_first_order_coupling_bound": 0.1171599878630497,
+          "max_cross_term_coupling_bound": 1.2588934671004618e-06,
+          "max_total_bound": 0.11716523982549165,
+          "median_total_bound": 0.0007862241361933845,
+          "max_residual_to_bound_ratio": 0.8547813335665948
+        }
+      },
+      "scale_display_rounded_11_decimal_places_max_added_error": 2.821017459461733e-09,
+      "rows_with_dipole_decimal_step_coarser_than_5dp": 466,
+      "cells_compatible_with_coarser_3significant_digit_export": {
+        "CAT": {
+          "first_900": {
+            "x": 6,
+            "y": 3,
+            "z": 9
+          },
+          "last_100": {
+            "x": 0,
+            "y": 1,
+            "z": 1
+          }
+        },
+        "PS": {
+          "first_900": {
+            "x": 0,
+            "y": 4,
+            "z": 5
+          },
+          "last_100": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      "modern_constants_exact_10_angstrom": {
+        "all_1000": {
+          "n_rows": 1000,
+          "r2": 0.999999999889301,
+          "rmse": 0.005713092207227209,
+          "mae": 0.0033269173226893258,
+          "mean_signed_residual": 0.0002370343861562893,
+          "max_absolute_residual": 0.051818131473737594,
+          "absolute_residual_quantiles": {
+            "0.5": 0.0016014064369471726,
+            "0.9": 0.009063044138304123,
+            "0.95": 0.013276884589538438,
+            "0.99": 0.020290569680757927
+          },
+          "residual_correlation_with_observed": 0.9982016874014079
+        },
+        "uniform_5dp_nearest": {
+          "within_bound": 279,
+          "outside_bound": 721,
+          "first_900_outside_bound": 649,
+          "last_100_outside_bound": 72,
+          "max_first_order_coupling_bound": 0.004168246503723415,
+          "max_cross_term_coupling_bound": 5.034116566872032e-10,
+          "max_total_bound": 0.004173247196905248,
+          "median_total_bound": 0.0007779617957145994,
+          "max_residual_to_bound_ratio": 12.895027526194529
+        }
+      }
+    },
+    "J_predicted": {
+      "first_900": {
+        "n_rows": 900,
+        "r2": 0.999999999999502,
+        "rmse": 0.0003251735644812476,
+        "mae": 0.00025084713179605167,
+        "mean_signed_residual": 3.0258978858687762e-06,
+        "max_absolute_residual": 0.0014703623753575812,
+        "absolute_residual_quantiles": {
+          "0.5": 0.0002126496146850343,
+          "0.9": 0.0004760794165463267,
+          "0.95": 0.000624733372569608,
+          "0.99": 0.0010187130017072826
+        },
+        "residual_correlation_with_observed": -0.04904675770727403
+      },
+      "last_100": {
+        "n_rows": 100,
+        "r2": 0.9999999192691608,
+        "rmse": 0.13764686243566293,
+        "mae": 0.06654050304438125,
+        "mean_signed_residual": -0.027899933405586747,
+        "max_absolute_residual": 0.6664778790873243,
+        "absolute_residual_quantiles": {
+          "0.5": 0.015090586748293333,
+          "0.9": 0.24731923870832517,
+          "0.95": 0.31032044876428677,
+          "0.99": 0.5116173513611212
+        },
+        "residual_correlation_with_observed": -0.4732772305015344
+      },
+      "all_1000": {
+        "n_rows": 1000,
+        "r2": 0.999999991169988,
+        "rmse": 0.043528852935731784,
+        "mae": 0.006879812723054571,
+        "mean_signed_residual": -0.0027872700324613926,
+        "max_absolute_residual": 0.6664778790873243,
+        "absolute_residual_quantiles": {
+          "0.5": 0.0002475335063039097,
+          "0.9": 0.0009606480533278742,
+          "0.95": 0.014946186050545393,
+          "0.99": 0.24728996782742846
+        },
+        "residual_correlation_with_observed": -0.15562576024472985
+      },
+      "rounding_bounds": {
+        "literal_xml_last_digit": {
+          "within_bound": 457,
+          "outside_bound": 543,
+          "first_900_outside_bound": 521,
+          "last_100_outside_bound": 22,
+          "max_first_order_coupling_bound": 3.0993974779236173,
+          "max_cross_term_coupling_bound": 1.2585159123267638e-05,
+          "max_total_bound": 3.099397477925648,
+          "median_total_bound": 0.00014151245197286945,
+          "max_residual_to_bound_ratio": 5325765022.028239
+        },
+        "uniform_5dp_nearest": {
+          "within_bound": 906,
+          "outside_bound": 94,
+          "first_900_outside_bound": 0,
+          "last_100_outside_bound": 94,
+          "max_first_order_coupling_bound": 0.003837710620250577,
+          "max_cross_term_coupling_bound": 5.034063649307055e-10,
+          "max_total_bound": 0.003842711280516425,
+          "median_total_bound": 0.0006817600146953962,
+          "max_residual_to_bound_ratio": 578.5837590422449
+        },
+        "uniform_5dp_truncation": {
+          "within_bound": 911,
+          "outside_bound": 89,
+          "first_900_outside_bound": 0,
+          "last_100_outside_bound": 89,
+          "max_first_order_coupling_bound": 0.007675421240501154,
+          "max_cross_term_coupling_bound": 2.013625459722822e-09,
+          "max_total_bound": 0.007685423410986096,
+          "median_total_bound": 0.0013635210315243252,
+          "max_residual_to_bound_ratio": 289.2915734370772
+        },
+        "mixed_5dp_3significant_digit_nearest": {
+          "within_bound": 1000,
+          "outside_bound": 0,
+          "first_900_outside_bound": 0,
+          "last_100_outside_bound": 0,
+          "max_first_order_coupling_bound": 1.0251534603099288,
+          "max_cross_term_coupling_bound": 1.2713527746324967e-06,
+          "max_total_bound": 1.0251597317039767,
+          "median_total_bound": 0.0007342713396006903,
+          "max_residual_to_bound_ratio": 0.8729738720337616
+        }
+      },
+      "scale_display_rounded_11_decimal_places_max_added_error": 2.6566635826822978e-09,
+      "rows_with_dipole_decimal_step_coarser_than_5dp": 514,
+      "cells_compatible_with_coarser_3significant_digit_export": {
+        "CAT": {
+          "first_900": {
+            "x": 7,
+            "y": 10,
+            "z": 10
+          },
+          "last_100": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          }
+        },
+        "PS": {
+          "first_900": {
+            "x": 1,
+            "y": 7,
+            "z": 1
+          },
+          "last_100": {
+            "x": 0,
+            "y": 99,
+            "z": 1
+          }
+        }
+      }
+    },
+    "Jstar_calculated": {
+      "first_900": {
+        "n_rows": 900,
+        "r2": 0.9999991596038728,
+        "rmse": 0.0006885686725194408,
+        "mae": 0.00023892441462162241,
+        "mean_signed_residual": 1.5129123336632173e-05,
+        "max_absolute_residual": 0.009762905537451516,
+        "absolute_residual_quantiles": {
+          "0.5": 8.035336513075031e-05,
+          "0.9": 0.0005196603151563783,
+          "0.95": 0.0007352400675297185,
+          "0.99": 0.0027176104313844786
+        },
+        "residual_correlation_with_observed": -0.05994653997569305
+      },
+      "last_100": {
+        "n_rows": 100,
+        "r2": 0.9999989879866749,
+        "rmse": 0.0006786408772809236,
+        "mae": 0.00037381021161659624,
+        "mean_signed_residual": -7.986644108822593e-05,
+        "max_absolute_residual": 0.002695258002904599,
+        "absolute_residual_quantiles": {
+          "0.5": 0.00015303397570695654,
+          "0.9": 0.0009590020458718069,
+          "0.95": 0.002003943667436356,
+          "0.99": 0.0023274949595225056
+        },
+        "residual_correlation_with_observed": -0.15317559359832508
+      },
+      "all_1000": {
+        "n_rows": 1000,
+        "r2": 0.9999991454883189,
+        "rmse": 0.0006875823435264527,
+        "mae": 0.0002524129943211198,
+        "mean_signed_residual": 5.62956689414636e-06,
+        "max_absolute_residual": 0.009762905537451516,
+        "absolute_residual_quantiles": {
+          "0.5": 8.708115784064607e-05,
+          "0.9": 0.0005560931783564761,
+          "0.95": 0.0008334278317512987,
+          "0.99": 0.0026954449453026217
+        },
+        "residual_correlation_with_observed": -0.06820562007467536
+      },
+      "rounding_bounds": {
+        "literal_xml_last_digit": {
+          "within_bound": 366,
+          "outside_bound": 634,
+          "first_900_outside_bound": 589,
+          "last_100_outside_bound": 45,
+          "max_first_order_coupling_bound": 1.055597492329641,
+          "max_cross_term_coupling_bound": 2.5170318246535273e-05,
+          "max_total_bound": 1.055597492329726,
+          "median_total_bound": 2.0620279833174423e-05,
+          "max_residual_to_bound_ratio": 160353530616.4219
+        },
+        "uniform_5dp_nearest": {
+          "within_bound": 404,
+          "outside_bound": 596,
+          "first_900_outside_bound": 525,
+          "last_100_outside_bound": 71,
+          "max_first_order_coupling_bound": 0.0001511296384413068,
+          "max_cross_term_coupling_bound": 5.034063649307055e-10,
+          "max_total_bound": 0.0001561301419007696,
+          "median_total_bound": 6.0567378944288984e-05,
+          "max_residual_to_bound_ratio": 99.74970922817651
+        },
+        "uniform_5dp_truncation": {
+          "within_bound": 562,
+          "outside_bound": 438,
+          "first_900_outside_bound": 381,
+          "last_100_outside_bound": 57,
+          "max_first_order_coupling_bound": 0.0003022592768826136,
+          "max_cross_term_coupling_bound": 2.013625459722822e-09,
+          "max_total_bound": 0.00031226129056117124,
+          "median_total_bound": 0.00012113576468557368,
+          "max_residual_to_bound_ratio": 49.874597545875744
+        },
+        "mixed_5dp_3significant_digit_nearest": {
+          "within_bound": 1000,
+          "outside_bound": 0,
+          "first_900_outside_bound": 0,
+          "last_100_outside_bound": 0,
+          "max_first_order_coupling_bound": 0.010700869833635539,
+          "max_cross_term_coupling_bound": 2.6430092674774363e-06,
+          "max_total_bound": 0.010706121788588126,
+          "median_total_bound": 0.0003149819080938362,
+          "max_residual_to_bound_ratio": 0.9791689122161024
+        }
+      },
+      "scale_display_rounded_11_decimal_places_max_added_error": 2.011044621282654e-12,
+      "rows_with_dipole_decimal_step_coarser_than_5dp": 996,
+      "cells_compatible_with_coarser_3significant_digit_export": {
+        "CAT": {
+          "first_900": {
+            "x": 51,
+            "y": 33,
+            "z": 50
+          },
+          "last_100": {
+            "x": 4,
+            "y": 10,
+            "z": 80
+          }
+        },
+        "PS": {
+          "first_900": {
+            "x": 894,
+            "y": 22,
+            "z": 9
+          },
+          "last_100": {
+            "x": 99,
+            "y": 3,
+            "z": 99
+          }
+        }
+      }
+    },
+    "Jstar_predicted": {
+      "first_900": {
+        "n_rows": 900,
+        "r2": 0.9999992522783664,
+        "rmse": 0.00046346224285855856,
+        "mae": 0.00019527094720972948,
+        "mean_signed_residual": 4.19083448050074e-06,
+        "max_absolute_residual": 0.005837998123706001,
+        "absolute_residual_quantiles": {
+          "0.5": 7.621856108380731e-05,
+          "0.9": 0.00044374252970344474,
+          "0.95": 0.0006879088020149026,
+          "0.99": 0.0019183416052412589
+        },
+        "residual_correlation_with_observed": -0.06119749519519388
+      },
+      "last_100": {
+        "n_rows": 100,
+        "r2": 0.9999991893438784,
+        "rmse": 0.0004687265072465396,
+        "mae": 0.00020957306413311414,
+        "mean_signed_residual": 6.66839230260914e-05,
+        "max_absolute_residual": 0.00338236521022095,
+        "absolute_residual_quantiles": {
+          "0.5": 7.22935856689727e-05,
+          "0.9": 0.0004654434505375307,
+          "0.95": 0.0006108401999035431,
+          "0.99": 0.001755299357853532
+        },
+        "residual_correlation_with_observed": -0.5113391731350583
+      },
+      "all_1000": {
+        "n_rows": 1000,
+        "r2": 0.9999992470220839,
+        "rmse": 0.0004639913569879196,
+        "mae": 0.00019670115890206794,
+        "mean_signed_residual": 1.044014333505981e-05,
+        "max_absolute_residual": 0.005837998123706001,
+        "absolute_residual_quantiles": {
+          "0.5": 7.426592737021231e-05,
+          "0.9": 0.00044468160906180337,
+          "0.95": 0.0006879088020149026,
+          "0.99": 0.0019183416052412589
+        },
+        "residual_correlation_with_observed": -0.10370522708353644
+      },
+      "rounding_bounds": {
+        "literal_xml_last_digit": {
+          "within_bound": 478,
+          "outside_bound": 522,
+          "first_900_outside_bound": 468,
+          "last_100_outside_bound": 54,
+          "max_first_order_coupling_bound": 0.9080444010620065,
+          "max_cross_term_coupling_bound": 2.5170318246535273e-05,
+          "max_total_bound": 0.908069571380306,
+          "median_total_bound": 3.843346096207713e-05,
+          "max_residual_to_bound_ratio": 98097980522.71716
+        },
+        "uniform_5dp_nearest": {
+          "within_bound": 372,
+          "outside_bound": 628,
+          "first_900_outside_bound": 570,
+          "last_100_outside_bound": 58,
+          "max_first_order_coupling_bound": 0.00014884392184133892,
+          "max_cross_term_coupling_bound": 5.034063649307055e-10,
+          "max_total_bound": 0.00015384442529354817,
+          "median_total_bound": 4.5023700603645024e-05,
+          "max_residual_to_bound_ratio": 73.50737519401476
+        },
+        "uniform_5dp_truncation": {
+          "within_bound": 539,
+          "outside_bound": 461,
+          "first_900_outside_bound": 414,
+          "last_100_outside_bound": 47,
+          "max_first_order_coupling_bound": 0.00029768784368267785,
+          "max_cross_term_coupling_bound": 2.013625459722822e-09,
+          "max_total_bound": 0.0003076898573539819,
+          "median_total_bound": 9.004840801496433e-05,
+          "max_residual_to_bound_ratio": 36.75345465106397
+        },
+        "mixed_5dp_3significant_digit_nearest": {
+          "within_bound": 1000,
+          "outside_bound": 0,
+          "first_900_outside_bound": 0,
+          "last_100_outside_bound": 0,
+          "max_first_order_coupling_bound": 0.010320564950965895,
+          "max_cross_term_coupling_bound": 2.5297428353680267e-06,
+          "max_total_bound": 0.010325816905918033,
+          "median_total_bound": 0.0003148656212126682,
+          "max_residual_to_bound_ratio": 0.9529683950236827
+        }
+      },
+      "scale_display_rounded_11_decimal_places_max_added_error": 1.6504881777512636e-12,
+      "rows_with_dipole_decimal_step_coarser_than_5dp": 1000,
+      "cells_compatible_with_coarser_3significant_digit_export": {
+        "CAT": {
+          "first_900": {
+            "x": 61,
+            "y": 40,
+            "z": 48
+          },
+          "last_100": {
+            "x": 5,
+            "y": 5,
+            "z": 69
+          }
+        },
+        "PS": {
+          "first_900": {
+            "x": 896,
+            "y": 32,
+            "z": 882
+          },
+          "last_100": {
+            "x": 96,
+            "y": 3,
+            "z": 0
+          }
+        }
+      }
+    }
+  },
+  "source_precision": {
+    "figure_5_calculated": {
+      "n_values": 3000,
+      "literal_xml_decimal_exponents": {
+        "-1": 1,
+        "-15": 204,
+        "-16": 1229,
+        "-17": 736,
+        "-18": 78,
+        "-19": 14,
+        "-2": 3,
+        "-20": 2,
+        "-3": 4,
+        "-4": 63,
+        "-5": 665,
+        "-8": 1
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "1": 1,
+        "2": 3,
+        "3": 27,
+        "4": 268,
+        "5": 2698,
+        "8": 1,
+        "9": 2
+      },
+      "scientific_notation_token_count": 113,
+      "number_format_counts": {
+        "0.00E+00": 3,
+        "General": 2997
+      }
+    },
+    "figure_5_predicted": {
+      "n_values": 3000,
+      "literal_xml_decimal_exponents": {
+        "-1": 8,
+        "-15": 154,
+        "-16": 985,
+        "-17": 939,
+        "-18": 105,
+        "-19": 9,
+        "-2": 48,
+        "-3": 12,
+        "-4": 60,
+        "-5": 680
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "1": 8,
+        "2": 53,
+        "3": 69,
+        "4": 262,
+        "5": 2608
+      },
+      "scientific_notation_token_count": 129,
+      "number_format_counts": {
+        "General": 3000
+      }
+    },
+    "figure_6_calculated": {
+      "n_values": 3000,
+      "literal_xml_decimal_exponents": {
+        "-15": 102,
+        "-16": 1766,
+        "-17": 409,
+        "-18": 42,
+        "-19": 7,
+        "-2": 2,
+        "-3": 9,
+        "-4": 67,
+        "-5": 596
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "2": 2,
+        "3": 31,
+        "4": 272,
+        "5": 2695
+      },
+      "scientific_notation_token_count": 59,
+      "number_format_counts": {
+        "0.00E+00": 3,
+        "General": 2997
+      }
+    },
+    "figure_6_predicted": {
+      "n_values": 3000,
+      "literal_xml_decimal_exponents": {
+        "-1": 9,
+        "-15": 72,
+        "-16": 1653,
+        "-17": 542,
+        "-18": 62,
+        "-19": 2,
+        "-2": 49,
+        "-20": 1,
+        "-3": 6,
+        "-4": 55,
+        "-5": 547,
+        "0": 2
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "0": 2,
+        "1": 9,
+        "2": 57,
+        "3": 52,
+        "4": 268,
+        "5": 2611,
+        "6": 1
+      },
+      "scientific_notation_token_count": 72,
+      "number_format_counts": {
+        "0.00E+00": 1,
+        "General": 2999
+      }
+    },
+    "figure_7_calculated": {
+      "n_values": 3000,
+      "literal_xml_decimal_exponents": {
+        "-10": 3,
+        "-17": 432,
+        "-18": 1262,
+        "-19": 440,
+        "-2": 2,
+        "-20": 46,
+        "-21": 7,
+        "-3": 17,
+        "-4": 86,
+        "-5": 696,
+        "-6": 1,
+        "-8": 1,
+        "-9": 7
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "10": 9,
+        "2": 2,
+        "3": 43,
+        "4": 301,
+        "5": 2589,
+        "6": 3,
+        "8": 6,
+        "9": 47
+      },
+      "scientific_notation_token_count": 2244,
+      "number_format_counts": {
+        "0.00E+00": 68,
+        "General": 2932
+      }
+    },
+    "figure_7_predicted": {
+      "n_values": 3000,
+      "literal_xml_decimal_exponents": {
+        "-10": 1,
+        "-16": 1,
+        "-17": 328,
+        "-18": 1240,
+        "-19": 543,
+        "-2": 4,
+        "-20": 76,
+        "-21": 7,
+        "-22": 2,
+        "-3": 12,
+        "-4": 78,
+        "-5": 700,
+        "-8": 1,
+        "-9": 7
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "10": 6,
+        "11": 2,
+        "2": 4,
+        "3": 44,
+        "4": 286,
+        "5": 2572,
+        "6": 3,
+        "7": 2,
+        "8": 6,
+        "9": 75
+      },
+      "scientific_notation_token_count": 2404,
+      "number_format_counts": {
+        "0.00E+00": 95,
+        "General": 2905
+      }
+    },
+    "figure_8_calculated": {
+      "n_values": 3000,
+      "literal_xml_decimal_exponents": {
+        "-1": 14,
+        "-16": 19,
+        "-17": 2085,
+        "-18": 217,
+        "-19": 22,
+        "-2": 120,
+        "-20": 2,
+        "-3": 121,
+        "-4": 56,
+        "-5": 339,
+        "0": 5
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "0": 5,
+        "1": 14,
+        "2": 135,
+        "3": 903,
+        "4": 238,
+        "5": 1703,
+        "6": 1,
+        "9": 1
+      },
+      "scientific_notation_token_count": 294,
+      "number_format_counts": {
+        "0.00E+00": 5,
+        "General": 2995
+      }
+    },
+    "figure_8_predicted": {
+      "n_values": 3000,
+      "literal_xml_decimal_exponents": {
+        "-1": 25,
+        "-16": 15,
+        "-17": 1670,
+        "-18": 409,
+        "-19": 47,
+        "-2": 170,
+        "-20": 7,
+        "-3": 308,
+        "-4": 82,
+        "-5": 264,
+        "0": 3
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "0": 3,
+        "1": 26,
+        "2": 196,
+        "3": 1449,
+        "4": 322,
+        "5": 997,
+        "6": 3,
+        "9": 4
+      },
+      "scientific_notation_token_count": 565,
+      "number_format_counts": {
+        "0.00E+00": 8,
+        "General": 2992
+      }
+    },
+    "J_calculated": {
+      "n_values": 1000,
+      "literal_xml_decimal_exponents": {
+        "-13": 49,
+        "-14": 372,
+        "-15": 268,
+        "-16": 43,
+        "-17": 3,
+        "-2": 4,
+        "-3": 1,
+        "-4": 30,
+        "-5": 230
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "2": 5,
+        "3": 8,
+        "4": 103,
+        "5": 884
+      },
+      "scientific_notation_token_count": 0,
+      "number_format_counts": {
+        "0.00E+00": 1,
+        "General": 999
+      }
+    },
+    "J_predicted": {
+      "n_values": 1000,
+      "literal_xml_decimal_exponents": {
+        "-13": 33,
+        "-14": 303,
+        "-15": 350,
+        "-16": 32,
+        "-17": 3,
+        "-3": 4,
+        "-4": 25,
+        "-5": 250
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "3": 10,
+        "4": 98,
+        "5": 892
+      },
+      "scientific_notation_token_count": 0,
+      "number_format_counts": {
+        "General": 1000
+      }
+    },
+    "Jstar_calculated": {
+      "n_values": 1000,
+      "literal_xml_decimal_exponents": {
+        "-16": 95,
+        "-17": 421,
+        "-18": 210,
+        "-19": 27,
+        "-2": 2,
+        "-20": 3,
+        "-3": 1,
+        "-4": 26,
+        "-5": 214,
+        "-9": 1
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "2": 2,
+        "3": 6,
+        "4": 93,
+        "5": 895,
+        "9": 4
+      },
+      "scientific_notation_token_count": 297,
+      "number_format_counts": {
+        "0.00E+00": 4,
+        "General": 996
+      }
+    },
+    "Jstar_predicted": {
+      "n_values": 1000,
+      "literal_xml_decimal_exponents": {
+        "-16": 36,
+        "-17": 365,
+        "-18": 278,
+        "-19": 49,
+        "-20": 7,
+        "-3": 2,
+        "-4": 30,
+        "-5": 232,
+        "-8": 1
+      },
+      "effective_decimal_places_after_binary_tail_tolerance": {
+        "3": 3,
+        "4": 95,
+        "5": 894,
+        "8": 1,
+        "9": 7
+      },
+      "scientific_notation_token_count": 419,
+      "number_format_counts": {
+        "0.00E+00": 12,
+        "General": 988
+      }
+    }
+  },
+  "rounding_model": {
+    "classification": "REIMPLEMENTATION CHOICE for diagnostic bounds; author rounding not documented",
+    "formula": "|delta J| <= |s| sum_i |w_i| (|p_i| e_ci + |c_i| e_pi + e_ci e_pi) + e_J + floating_arithmetic_allowance",
+    "assumptions": [
+      "Nearest-rounding half steps, or full steps in the explicit truncation scenario; independent per-cell errors.",
+      "General and scientific Excel formats are display instructions, not stored-value rounding.",
+      "Literal XML half-last-digit bounds are serialization diagnostics, not certified pre-export precision.",
+      "Uniform five decimals is a bounded hypothesis motivated by most values, not a universal observed precision.",
+      "The mixed export hypothesis permits a three-significant-digit half step only where the stored value is consistent with three significant digits; every other dipole retains the five-decimal bound. Coincidental short values remain ambiguous and this does not recover author rounding code.",
+      "No latent values are imputed or optimized. No arbitrary tensor is fitted."
+    ],
+    "uniform_5dp_positive_scalar_interval_first_900": {
+      "minimum": 5.034062503876238,
+      "maximum": 5.034066337226311,
+      "nonempty": true,
+      "fit_rows_used": 900
+    }
+  },
+  "physical_unit_analysis": {
+    "constants": {
+      "epsilon_0_F_per_m": 8.8541878188e-12,
+      "epsilon_0_standard_uncertainty_F_per_m": 1.4e-21,
+      "planck_J_s": 6.62607015e-34,
+      "speed_of_light_m_per_s": 299792458.0,
+      "elementary_charge_C": 1.602176634e-19,
+      "bohr_radius_m": 5.29177210544e-11,
+      "debye_C_m": 3.33564095198152e-30
+    },
+    "primary_sources": [
+      "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "https://cccbdb.nist.gov/dipunitsx.asp"
+    ],
+    "coefficient_per_debye_squared_per_angstrom_cubed": {
+      "J": 9.999999998667733e-20,
+      "eV": 0.6241509073629228,
+      "meV": 624.1509073629228,
+      "cm^-1": 5034.116566872031
+    },
+    "debye_cm_inverse_hypothesis": {
+      "effective_distance_angstrom": 10.00003503953813,
+      "signed_discrepancy_from_10_angstrom": 3.5039538129666425e-05,
+      "absolute_discrepancy_from_10_angstrom": 3.5039538129666425e-05,
+      "relative_discrepancy_from_10": 3.5039538129666425e-06,
+      "nominal_10_angstrom_scalar": 5.034116566872031,
+      "empirical_minus_nominal_scalar": -5.29175649770508e-05,
+      "relative_scalar_discrepancy": -1.051178777330763e-05,
+      "nominal_scalar_within_uniform_5dp_rounding_interval": false,
+      "effective_distance_interval_uniform_5dp_rounding_angstrom": [
+        10.000033259711792,
+        10.000035797994308
+      ],
+      "relative_distance_standard_uncertainty_from_epsilon0_only": 5.270575644169174e-11
+    },
+    "alternative_unit_hypotheses": [
+      {
+        "both_dipoles_unit": "Debye",
+        "coupling_unit": "J",
+        "effective_distance_angstrom": 2.708281267656214e-07,
+        "effective_distance_bohr": 5.117909867796596e-07
+      },
+      {
+        "both_dipoles_unit": "Debye",
+        "coupling_unit": "eV",
+        "effective_distance_angstrom": 0.4986436596653739,
+        "effective_distance_bohr": 0.9422999511879259
+      },
+      {
+        "both_dipoles_unit": "Debye",
+        "coupling_unit": "meV",
+        "effective_distance_angstrom": 4.986436596653738,
+        "effective_distance_bohr": 9.422999511879256
+      },
+      {
+        "both_dipoles_unit": "Debye",
+        "coupling_unit": "cm^-1",
+        "effective_distance_angstrom": 10.00003503953813,
+        "effective_distance_bohr": 18.89732747420847
+      },
+      {
+        "both_dipoles_unit": "e a0",
+        "coupling_unit": "J",
+        "effective_distance_angstrom": 5.04407945189389e-07,
+        "effective_distance_bohr": 9.531928721398492e-07
+      },
+      {
+        "both_dipoles_unit": "e a0",
+        "coupling_unit": "eV",
+        "effective_distance_angstrom": 0.9287064336976975,
+        "effective_distance_bohr": 1.7550008110571826
+      },
+      {
+        "both_dipoles_unit": "e a0",
+        "coupling_unit": "meV",
+        "effective_distance_angstrom": 9.287064336976973,
+        "effective_distance_bohr": 17.550008110571827
+      },
+      {
+        "both_dipoles_unit": "e a0",
+        "coupling_unit": "cm^-1",
+        "effective_distance_angstrom": 18.624716665712317,
+        "effective_distance_bohr": 35.19561367082665
+      }
+    ],
+    "limits": "Vacuum prefactor with relative permittivity one is a hypothesis. Units, length units and dielectric factors remain jointly confounded; natural distance alone does not prove a unique convention."
+  }
+}

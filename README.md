@@ -5,10 +5,12 @@ Independent reproduction and forensic reimplementation project for Hu et al.,
 descriptor-based high-throughput screening”, *Nature Catalysis* **8**, 126–136
 (2025). [Original article and DOI](https://doi.org/10.1038/s41929-025-01291-z).
 
-Current phase: **Phase 0 — repository initialization and released-data forensics**.
-The descriptor screen and released prediction statistics have been reconstructed.
-The original neural-network inputs, trained models and full screening calculation
-have not been reproduced. No new neural network, DFT or MD calculation has run.
+**Phase 0 is complete; Phase 1 reconstructs and freezes the algorithm.** The
+descriptor screen, released prediction statistics and validation coupling tensor
+have been reconstructed. No production MD, DFT/QM calculation or neural-network
+training has run. Exact author-model reproduction remains impossible because the
+original inputs, weights and complete settings are unavailable; independent
+scientific algorithm reproduction is the project target.
 
 ## Local evidence and redistribution boundary
 
@@ -32,11 +34,20 @@ IDs, computed metrics and forensic reports. A clone alone does not include input
 - `forensics/outputs/`: metadata and computed audit summaries.
 - `forensics/reports/`: evidence reports and reproducibility matrix.
 - `forensics/local_only/`: complete numeric extractions, ignored and never distributable.
-- `docs/`: reproduction instructions and source-handling record.
+- `docs/`: algorithm specification, independent contract, compute plan and provenance.
+- `configs/`: explicit future-compute settings and unresolved inputs; no launch authority.
+- `src/hu2025_repro/`: physical dipole-coupling and aggregation functions.
+- `tests/`: entirely synthetic coupling checks.
 
 Start with [Phase-0 data forensics](forensics/reports/PHASE0_DATA_FORENSICS.md),
 the [reproducibility matrix](forensics/reports/REPRODUCIBILITY_MATRIX.md), and
 [rerun instructions](docs/PHASE0_REPRODUCTION.md).
 
-Phase 0 establishes what the released evidence supports; it does not establish
-end-to-end reproduction or scientific validation of the paper's model.
+Phase 1: [coupling reconstruction](forensics/reports/PHASE1_COUPLING_RECONSTRUCTION.md),
+[algorithm specification](docs/ALGORITHM_SPEC.md),
+[authoritative reimplementation contract](docs/REIMPLEMENTATION_CONTRACT.md),
+[configuration](configs/reimplementation_v1.yaml), and [future compute plan](docs/COMPUTE_PLAN.md).
+The near-10 Å Debye/cm⁻¹ interpretation is conditional and not uniquely identified.
+The next task is pilot input preparation and dry-run validation; chemistry, state,
+parameter and launch gates remain. Neither phase establishes end-to-end reproduction
+or scientific validation of the paper's model.

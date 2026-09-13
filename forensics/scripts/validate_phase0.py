@@ -96,7 +96,7 @@ def main():
     sizes = {}
 
     def inspect_blob(name, content):
-        allowed = name == '.gitignore' or Path(name).suffix in {'.py', '.md', '.csv', '.json'}
+        allowed = name == '.gitignore' or Path(name).suffix in {'.py', '.md', '.csv', '.json', '.yaml', '.yml'}
         if not allowed or name.startswith(('orginal/', 'original/', 'forensics/local_only/', 'data/local_only/')):
             rejected.append(f'Unapproved tracked source/type: {name}')
         if hashlib.sha256(content).hexdigest() in original_hashes:

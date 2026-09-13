@@ -1,0 +1,209 @@
+# Future-compute contract only; no configuration loader or execution framework.
+# null means unresolved and blocks the affected job, never use a software default.
+contract_version: 1
+status: design_only_no_launch
+
+paper_defined:
+  source: "Hu et al. 2025, DOI 10.1038/s41929-025-01291-z; article PDF pp. 7-8"
+  candidate_catalysts: 84
+  candidate_photosensitizers: 41
+  adsorption_energy_max_exclusive_eV: -0.20
+  lifetime_min_exclusive_ns: 90
+  retained_catalysts: 18
+  retained_photosensitizers: 10
+  retained_pairs: 180
+  md:
+    ensemble: NVT
+    thermostat: Nose_Hoover
+    temperature_K: 298
+    timestep_fs: 1
+    cubic_box_nm: 5
+    periodic_axes: [x, y, z]
+    forcefield_family: UFF
+    lennard_jones_cutoff_angstrom: 12.5
+    coulomb_cutoff_angstrom: 12.5
+    total_ps: 110
+    equilibration_ps: 10
+    snapshot_interval_ps: 0.1
+    snapshots_per_pair: 1000
+  qm:
+    program: Gaussian_16
+    functional: omegaB97XD
+    transition_metal_basis_ecp: LANL2DZ
+    other_atom_basis: "6-31G(d)"
+    solvent_model: PCM
+    mentioned_solvents: [water, acetonitrile]
+    ps_label_species: reduced_photosensitizer
+  ml:
+    implementation: [TensorFlow, Keras]
+    hidden_layers: 2
+    hidden_activation: relu
+    candidate_widths: [256, 512, 1024]
+    regularizer_family: L1
+    optimizer: Adam
+    learning_rate: 0.0001
+    development_count_per_species: 900
+    test_count_per_species: 100
+
+forensic_inference:
+  evidence: forensics/reports/PHASE1_COUPLING_RECONSTRUCTION.md
+  computed_summary: forensics/outputs/phase1_coupling.json
+  tensor_axis_in_released_components: x
+  diagonal_tensor: [-2, 1, 1]
+  scalar_estimation: first_900_calculated_intrinsic_rows_only
+  fitted_scalar_computed_from_released_data: 5.034063649307054
+  source_dipole_unit_hypothesis: Debye
+  source_coupling_unit_hypothesis: cm^-1
+  effective_distance_angstrom_under_unit_hypothesis: 10.00003503953813
+  unit_distance_evidence_class: STRONG_INFERENCE
+  unit_distance_unique: false
+  inference_scope: released_validation_tensor_only_not_MD_or_pair_map
+  physical_prefactor_cm_inverse_per_Debye_squared_at_1_angstrom: 5034.116566872031
+  exact_10_angstrom_modern_constants_within_uniform_5dp_rounding: false
+  common_physical_geometry_across_all_targets: unproven
+  author_aggregation: unknown
+
+reimplementation_choice:
+  local_run_root: forensics/local_only/pilot_runs
+  launch_authorized: false
+  seed: 2025
+  chemical_identity_manifest: null
+  md:
+    engine_candidate: LAMMPS
+    engine_version: null
+    uff_parameter_manifest: null
+    charge_and_counterion_manifest: null
+    coordinate_unit: angstrom_after_source_verification
+    integrator: velocity_Verlet
+    thermostat_chain_length: 3
+    thermostat_damping_ps: 0.1
+    bond_constraints: none
+    explicit_solvent: none
+    initial_velocities: Maxwell_Boltzmann_remove_total_COM_momentum
+    lj_cutoff_treatment: energy_shifted
+    coulomb_cutoff_treatment: truncated
+    full_run_first_snapshot_ps: 10.1
+    failed_frame_policy: stop_pair_preserve_attempt
+  qm:
+    geometry_operation: single_point_on_sampled_conformation
+    program_revision: null
+    charge_multiplicity_manifest: null
+    reduced_ps_electron_increment: 1
+    solvent_assignment: null
+    root_identity: null
+    admissible_roots_requested: 5
+    bright_state_minimum_oscillator_strength: 0.001
+    transition_phase: reference_overlap_with_ambiguity_stop
+    transition_phase_overlap_frame: aligned_molecular_feature_frames
+    transition_phase_order: fix_before_restoring_common_pair_frame
+    scf_candidate: tight
+    integration_grid_candidate: ultrafine
+    intrinsic_dipole_origin: molecular_COM_with_charge_translation
+    label_dipole_unit: Debye
+  features:
+    atom_selection: metal_and_first_bonded_shell_from_reviewed_topology
+    atom_order: metal_first_then_immutable_manifest_index
+    variable_size: pad_to_species_family_maximum_with_mask
+    element_encoding: one_hot
+    centering: metal
+    frame: right_handed_two_manifest_ligand_anchors
+    coordinate_scaling: fit_training_mean_std_only_zero_variance_scale_1
+    padding: zero_with_unscaled_mask
+    categorical_scaling: none
+    target_scaling: fit_training_component_mean_std_only_zero_variance_scale_1
+  ml:
+    model_count: 4
+    output_grouping: CAT_PS_cross_intrinsic_transition_four_models_three_components_each
+    hidden_widths: [256, 256]
+    output_activation: linear
+    l1_coefficient: 0.000001
+    l1_scope: hidden_kernels_only
+    loss: mean_squared_error_over_standardized_components_plus_L1
+    adam_beta1: 0.9
+    adam_beta2: 0.999
+    adam_epsilon: 0.0000001
+    adam_amsgrad: false
+    learning_rate_schedule: constant
+    hidden_initializer: He_normal
+    output_initializer: Glorot_uniform
+    bias_initializer: zeros
+    training_dtype: float32
+    batch_size: 32
+    shuffle_training_batches: true
+    maximum_epochs: 2000
+    early_stopping_monitor: validation_total_objective
+    early_stopping_patience: 100
+    early_stopping_minimum_delta: 0.000001
+    restore_best_weights: true
+    inner_fit_count: 810
+    inner_validation_count: 90
+    final_refit_on_900: false
+    split_group: fixed_size_temporal_blocks_exact_counts_or_stop
+    temporal_split_limit: reduces_within_block_mixing_boundary_dependence_remains
+    separate_holdout_tests: [identity, independent_trajectory]
+    targets_share_split_within_species: true
+    exact_software_versions: null
+  coupling:
+    dipole_unit: Debye
+    length_unit: angstrom
+    output_unit: cm^-1
+    evaluation_dtype: float64
+    relative_permittivity: 1
+    conventions: [actual_minimum_image_COM_vector, standardized_common_rotation_fixed_distance]
+    standardized_axis: x
+    standardized_rotation: same_proper_rotation_for_both_dipoles_and_actual_COM_vector
+    standardized_rotation_target: actual_minimum_image_COM_vector_to_positive_x
+    standardized_operation: replace_only_magnitude_after_common_rotation
+    standardized_transverse_rotation: arbitrary_common_rotation_tensor_invariant
+    standardized_distance_angstrom: 10
+    standardized_covariance_check: "J_standardized = J_actual * (norm_r_angstrom / 10)^3"
+    standardized_geometry_operation_evidence: REIMPLEMENTATION_CHOICE_not_recovered_author_operation
+    aggregations: [signed_mean, mean_absolute, absolute_signed_mean, rms]
+    weights: equal
+    primary_author_aggregation: null
+    nonfinite_policy: stop_pair
+  screening:
+    main_comparison: known_selected_identity_enrichment_and_rank_sensitivity
+    compatibility_probe_only:
+      J_minimum_exclusive: 50
+      Jstar_minimum_exclusive: 0.01
+    experimental_good_probe_only:
+      TON_CO_minimum_exclusive: 1370
+      CO_selectivity_minimum_exclusive_percent: 72
+  pilot:
+    candidate_pairs: [CAT1_PS1, CAT61_PS33]
+    maximum_pairs: 2
+    maximum_trajectory_ps_per_pair: 10.4
+    snapshot_times_ps: [10.1, 10.2, 10.3, 10.4]
+    maximum_molecule_geometry_records: 16
+    maximum_QM_job_attempts_including_retries: 32
+    maximum_concurrent_jobs: 1
+    maximum_CPU_cores_per_job: 4
+    maximum_memory_GiB_per_job: 8
+    maximum_MD_wall_minutes_per_attempt: 30
+    maximum_QM_wall_hours_per_attempt: 4
+    train_models: false
+    production_trajectory_generation: false
+
+sensitivity_grid:
+  execution_policy: one_factor_at_a_time_with_separate_budget_no_cartesian_launch
+  seeds: [2026, 2027]
+  md_thermostat_damping_ps: [1.0]
+  md_timestep_fs: [0.5]
+  md_engine_alternative_after_parameter_equivalence: [OpenMM]
+  solvent_candidates_pending_assignment: [water, acetonitrile]
+  spin_candidates: null  # Require chemically grounded per-species candidates.
+  transition_selection: [lowest_energy_admissible, lowest_bright_admissible]
+  atom_selection: [metal_and_second_bonded_shell]
+  frame: [whole_molecule_rigid_fit]
+  coordinate_center: [molecular_COM]
+  feature_scaling: [none]
+  target_scaling: [none]
+  output_grouping: [two_species_models_six_outputs_each]
+  hidden_widths: [[512, 512], [1024, 1024]]
+  l1_coefficient: [0, 0.0000001, 0.00001]
+  loss: [mean_absolute_error]
+  batch_size: [16, 64]
+  early_stopping_patience: [50, 200]
+  standardized_distance_angstrom: [8, 12]
+  aggregation: [signed_mean, mean_absolute, absolute_signed_mean, rms]
