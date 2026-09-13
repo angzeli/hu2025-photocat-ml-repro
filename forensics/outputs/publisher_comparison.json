@@ -1,0 +1,1046 @@
+{
+  "method": "All nonempty cells compared as resolved strings, formulas or exact decimal numbers. No cell values exported.",
+  "comparisons": [
+    {
+      "local_source": "orginal/41929_2025_1291_MOESM2_ESM.xlsx",
+      "publisher_download_filename": "hu2025-publisher-MOESM2.xlsx",
+      "publisher_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41929-025-01291-z/MediaObjects/41929_2025_1291_MOESM2_ESM.xlsx",
+      "local_sha256_from_manifest": "4b298ecb9f8b9cf474d8215686b6aae82eeea96499ee0f0899e91279c3d9de5c",
+      "publisher_download_sha256": "9bb5c78137477b02d60cd6b21ecee1e0db3a9b7c690e2d5d1dae1282e1ec6924",
+      "byte_identical": false,
+      "all_nonempty_cell_content_identical": true,
+      "sheet_comparisons": [
+        {
+          "part": "xl/worksheets/sheet1.xml",
+          "local_nonempty_cells": 85,
+          "publisher_nonempty_cells": 85,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet10.xml",
+          "local_nonempty_cells": 104,
+          "publisher_nonempty_cells": 104,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet11.xml",
+          "local_nonempty_cells": 80,
+          "publisher_nonempty_cells": 80,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet12.xml",
+          "local_nonempty_cells": 108,
+          "publisher_nonempty_cells": 108,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet13.xml",
+          "local_nonempty_cells": 78,
+          "publisher_nonempty_cells": 78,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet14.xml",
+          "local_nonempty_cells": 1805,
+          "publisher_nonempty_cells": 1805,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet15.xml",
+          "local_nonempty_cells": 59,
+          "publisher_nonempty_cells": 59,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet16.xml",
+          "local_nonempty_cells": 890,
+          "publisher_nonempty_cells": 890,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet17.xml",
+          "local_nonempty_cells": 714,
+          "publisher_nonempty_cells": 714,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet18.xml",
+          "local_nonempty_cells": 53866,
+          "publisher_nonempty_cells": 53866,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet19.xml",
+          "local_nonempty_cells": 111318,
+          "publisher_nonempty_cells": 111318,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet2.xml",
+          "local_nonempty_cells": 42,
+          "publisher_nonempty_cells": 42,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet20.xml",
+          "local_nonempty_cells": 2465,
+          "publisher_nonempty_cells": 2465,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet21.xml",
+          "local_nonempty_cells": 218746,
+          "publisher_nonempty_cells": 218746,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet22.xml",
+          "local_nonempty_cells": 129418,
+          "publisher_nonempty_cells": 129418,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet23.xml",
+          "local_nonempty_cells": 126217,
+          "publisher_nonempty_cells": 126217,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet24.xml",
+          "local_nonempty_cells": 126437,
+          "publisher_nonempty_cells": 126437,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet25.xml",
+          "local_nonempty_cells": 108959,
+          "publisher_nonempty_cells": 108959,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet26.xml",
+          "local_nonempty_cells": 3011,
+          "publisher_nonempty_cells": 3011,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet27.xml",
+          "local_nonempty_cells": 44140,
+          "publisher_nonempty_cells": 44140,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet28.xml",
+          "local_nonempty_cells": 7265,
+          "publisher_nonempty_cells": 7265,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet29.xml",
+          "local_nonempty_cells": 15251,
+          "publisher_nonempty_cells": 15251,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet3.xml",
+          "local_nonempty_cells": 24,
+          "publisher_nonempty_cells": 24,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet30.xml",
+          "local_nonempty_cells": 32528,
+          "publisher_nonempty_cells": 32528,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet31.xml",
+          "local_nonempty_cells": 3128,
+          "publisher_nonempty_cells": 3128,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet32.xml",
+          "local_nonempty_cells": 117,
+          "publisher_nonempty_cells": 117,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet33.xml",
+          "local_nonempty_cells": 1290,
+          "publisher_nonempty_cells": 1290,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet34.xml",
+          "local_nonempty_cells": 1289,
+          "publisher_nonempty_cells": 1289,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet35.xml",
+          "local_nonempty_cells": 550,
+          "publisher_nonempty_cells": 550,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet36.xml",
+          "local_nonempty_cells": 753,
+          "publisher_nonempty_cells": 753,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet37.xml",
+          "local_nonempty_cells": 642,
+          "publisher_nonempty_cells": 642,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet38.xml",
+          "local_nonempty_cells": 1100,
+          "publisher_nonempty_cells": 1100,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet39.xml",
+          "local_nonempty_cells": 2931,
+          "publisher_nonempty_cells": 2931,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet4.xml",
+          "local_nonempty_cells": 42,
+          "publisher_nonempty_cells": 42,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet40.xml",
+          "local_nonempty_cells": 338,
+          "publisher_nonempty_cells": 338,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet41.xml",
+          "local_nonempty_cells": 1568,
+          "publisher_nonempty_cells": 1568,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet42.xml",
+          "local_nonempty_cells": 645,
+          "publisher_nonempty_cells": 645,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet43.xml",
+          "local_nonempty_cells": 3797,
+          "publisher_nonempty_cells": 3797,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet44.xml",
+          "local_nonempty_cells": 438,
+          "publisher_nonempty_cells": 438,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet45.xml",
+          "local_nonempty_cells": 1250,
+          "publisher_nonempty_cells": 1250,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet46.xml",
+          "local_nonempty_cells": 2411,
+          "publisher_nonempty_cells": 2411,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet47.xml",
+          "local_nonempty_cells": 4520,
+          "publisher_nonempty_cells": 4520,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet48.xml",
+          "local_nonempty_cells": 724,
+          "publisher_nonempty_cells": 724,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet49.xml",
+          "local_nonempty_cells": 6006,
+          "publisher_nonempty_cells": 6006,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet5.xml",
+          "local_nonempty_cells": 6021,
+          "publisher_nonempty_cells": 6021,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet50.xml",
+          "local_nonempty_cells": 488,
+          "publisher_nonempty_cells": 488,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet51.xml",
+          "local_nonempty_cells": 33,
+          "publisher_nonempty_cells": 33,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet52.xml",
+          "local_nonempty_cells": 69,
+          "publisher_nonempty_cells": 69,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet53.xml",
+          "local_nonempty_cells": 350,
+          "publisher_nonempty_cells": 350,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet6.xml",
+          "local_nonempty_cells": 6021,
+          "publisher_nonempty_cells": 6021,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet7.xml",
+          "local_nonempty_cells": 6021,
+          "publisher_nonempty_cells": 6021,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet8.xml",
+          "local_nonempty_cells": 6021,
+          "publisher_nonempty_cells": 6021,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet9.xml",
+          "local_nonempty_cells": 4006,
+          "publisher_nonempty_cells": 4006,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        }
+      ],
+      "structural_differences": [],
+      "publisher_metadata": {
+        "docProps/core.xml": {
+          "creator": "yang",
+          "lastModifiedBy": "Chao Gao",
+          "created": "2023-05-12T11:15:00Z",
+          "modified": "2024-12-22T19:17:14Z"
+        },
+        "docProps/app.xml": {
+          "Application": "Microsoft Excel",
+          "DocSecurity": "0",
+          "ScaleCrop": "false",
+          "LinksUpToDate": "false",
+          "SharedDoc": "false",
+          "HyperlinksChanged": "false",
+          "AppVersion": "16.0300"
+        },
+        "docProps/custom.xml": {
+          "KSOProductBuildVer": "2052-12.1.0.19302",
+          "ICV": "D8979AE00B33482FAB292FEE0446C254_12"
+        }
+      },
+      "publisher_package_scan": {
+        "part_count": 63,
+        "parsed_xml_parts": 63,
+        "external_relationships": [],
+        "relationships": [
+          {
+            "part": "_rels/.rels",
+            "Id": "rId3",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+            "Target": "docProps/app.xml"
+          },
+          {
+            "part": "_rels/.rels",
+            "Id": "rId2",
+            "Type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+            "Target": "docProps/core.xml"
+          },
+          {
+            "part": "_rels/.rels",
+            "Id": "rId1",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+            "Target": "xl/workbook.xml"
+          },
+          {
+            "part": "_rels/.rels",
+            "Id": "rId4",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/custom-properties",
+            "Target": "docProps/custom.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId13",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet13.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId18",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet18.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId26",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet26.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId39",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet39.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId21",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet21.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId34",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet34.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId42",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet42.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId47",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet47.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId50",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet50.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId55",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+            "Target": "styles.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId7",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet7.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId2",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet2.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId16",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet16.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId29",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet29.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId11",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet11.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId24",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet24.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId32",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet32.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId37",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet37.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId40",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet40.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId45",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet45.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId53",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet53.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId5",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet5.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId10",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet10.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId19",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet19.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId31",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet31.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId44",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet44.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId52",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet52.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId4",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet4.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId9",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet9.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId14",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet14.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId22",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet22.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId27",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet27.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId30",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet30.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId35",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet35.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId43",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet43.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId48",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet48.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId56",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStrings",
+            "Target": "sharedStrings.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId8",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet8.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId51",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet51.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId3",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet3.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId12",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet12.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId17",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet17.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId25",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet25.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId33",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet33.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId38",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet38.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId46",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet46.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId20",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet20.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId41",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet41.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId54",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+            "Target": "theme/theme1.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId1",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet1.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId6",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet6.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId15",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet15.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId23",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet23.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId28",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet28.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId36",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet36.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId49",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet49.xml"
+          }
+        ],
+        "special_parts": [],
+        "shared_strings": {
+          "unique_entries": 378,
+          "referenced_entries": 378,
+          "unreferenced_entries": 0,
+          "unreferenced_text_lengths": []
+        }
+      },
+      "publisher_workbook_settings": {
+        "fileVersion": {
+          "appName": "xl",
+          "lastEdited": "7",
+          "lowestEdited": "5",
+          "rupBuild": "26626"
+        },
+        "workbookPr": {},
+        "calcPr": {
+          "calcId": "191029"
+        }
+      },
+      "publisher_defined_names": [],
+      "publisher_integrity": {
+        "zip_crc_error": null
+      }
+    },
+    {
+      "local_source": "orginal/41929_2025_1291_MOESM11_ESM.xlsx",
+      "publisher_download_filename": "hu2025-publisher-MOESM11.xlsx",
+      "publisher_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41929-025-01291-z/MediaObjects/41929_2025_1291_MOESM11_ESM.xlsx",
+      "local_sha256_from_manifest": "dac526645ee459e8823a248eccb460459b32bd5e8410f15fc98ea004ee8b2613",
+      "publisher_download_sha256": "3749e8ad72c457036920d818d6d5406a9eef933d3fec6faf93a396a98d150726",
+      "byte_identical": false,
+      "all_nonempty_cell_content_identical": true,
+      "sheet_comparisons": [
+        {
+          "part": "xl/worksheets/sheet1.xml",
+          "local_nonempty_cells": 70,
+          "publisher_nonempty_cells": 70,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        },
+        {
+          "part": "xl/worksheets/sheet2.xml",
+          "local_nonempty_cells": 176,
+          "publisher_nonempty_cells": 176,
+          "different_cells": 0,
+          "difference_types": {},
+          "first_difference_coordinates": [],
+          "maximum_absolute_numeric_difference": "0"
+        }
+      ],
+      "structural_differences": [],
+      "publisher_metadata": {
+        "docProps/core.xml": {
+          "creator": "胡 阳光",
+          "lastModifiedBy": "胡 阳光",
+          "created": "2024-12-17T07:10:00Z",
+          "modified": "2024-12-23T05:38:33Z"
+        },
+        "docProps/app.xml": {
+          "Application": "Microsoft Excel",
+          "DocSecurity": "0",
+          "ScaleCrop": "false",
+          "LinksUpToDate": "false",
+          "SharedDoc": "false",
+          "HyperlinksChanged": "false",
+          "AppVersion": "16.0300"
+        },
+        "docProps/custom.xml": {
+          "ICV": "F0AAA9A94CD24750B85B90A2511360C6_12",
+          "KSOProductBuildVer": "2052-12.1.0.19302"
+        }
+      },
+      "publisher_package_scan": {
+        "part_count": 14,
+        "parsed_xml_parts": 13,
+        "external_relationships": [],
+        "relationships": [
+          {
+            "part": "_rels/.rels",
+            "Id": "rId3",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+            "Target": "docProps/app.xml"
+          },
+          {
+            "part": "_rels/.rels",
+            "Id": "rId2",
+            "Type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+            "Target": "docProps/core.xml"
+          },
+          {
+            "part": "_rels/.rels",
+            "Id": "rId1",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+            "Target": "xl/workbook.xml"
+          },
+          {
+            "part": "_rels/.rels",
+            "Id": "rId4",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/custom-properties",
+            "Target": "docProps/custom.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId3",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+            "Target": "theme/theme1.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId2",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet2.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId1",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+            "Target": "worksheets/sheet1.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId5",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStrings",
+            "Target": "sharedStrings.xml"
+          },
+          {
+            "part": "xl/_rels/workbook.xml.rels",
+            "Id": "rId4",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+            "Target": "styles.xml"
+          },
+          {
+            "part": "xl/worksheets/_rels/sheet1.xml.rels",
+            "Id": "rId1",
+            "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings",
+            "Target": "../printerSettings/printerSettings1.bin"
+          }
+        ],
+        "special_parts": [],
+        "shared_strings": {
+          "unique_entries": 39,
+          "referenced_entries": 39,
+          "unreferenced_entries": 0,
+          "unreferenced_text_lengths": []
+        }
+      },
+      "publisher_workbook_settings": {
+        "fileVersion": {
+          "appName": "xl",
+          "lastEdited": "7",
+          "lowestEdited": "5",
+          "rupBuild": "24332"
+        },
+        "workbookPr": {},
+        "calcPr": {
+          "calcId": "191029"
+        }
+      },
+      "publisher_defined_names": [],
+      "publisher_integrity": {
+        "zip_crc_error": null
+      }
+    }
+  ]
+}

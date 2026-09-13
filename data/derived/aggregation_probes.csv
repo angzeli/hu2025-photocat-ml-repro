@@ -1,0 +1,5 @@
+channel,n,signed_mean,mean_absolute,absolute_signed_mean,rms,source,interpretation
+J_calculated,1000,21.018030839999998,315.34584402,21.018030839999998,543.4059695231349,MOESM2 Supplementary Fig. 9 rows3:1002,validation rows with unknown pair grouping; not a recovered pair average
+J_predicted,1000,29.584999919999998,254.46538659999996,29.584999919999998,464.1736776173433,MOESM2 Supplementary Fig. 9 rows3:1002,validation rows with unknown pair grouping; not a recovered pair average
+Jstar_calculated,1000,0.0010086320150000034,0.48912243201499994,0.0010086320150000034,0.7438170227416065,MOESM2 Supplementary Fig. 9 rows3:1002,validation rows with unknown pair grouping; not a recovered pair average
+Jstar_predicted,1000,0.0013008242719999982,0.314403369488,0.0013008242719999982,0.5347121548369947,MOESM2 Supplementary Fig. 9 rows3:1002,validation rows with unknown pair grouping; not a recovered pair average

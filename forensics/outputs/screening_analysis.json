@@ -1,0 +1,139 @@
+{
+  "provenance": {
+    "descriptors": "41929_2025_1291_MOESM2_ESM.xlsx: Supplementary Fig.1 A2:A85 / Fig.2 A2:A42",
+    "screening": "41929_2025_1291_MOESM11_ESM.xlsx: Fig.1d A2:B35",
+    "experimental": "41929_2025_1291_MOESM11_ESM.xlsx: Fig.1e A2:D44"
+  },
+  "descriptors": {
+    "CAT": {
+      "total": 84,
+      "retained": 18,
+      "ids": [
+        1,
+        2,
+        3,
+        13,
+        14,
+        15,
+        25,
+        26,
+        27,
+        37,
+        38,
+        39,
+        49,
+        50,
+        51,
+        61,
+        62,
+        63
+      ],
+      "minimum": -0.35356,
+      "maximum": 1.217,
+      "mean": 0.1317277380952381,
+      "exact_cutoff_count": 0,
+      "cutoff": -0.2,
+      "units": "eV"
+    },
+    "PS": {
+      "total": 41,
+      "retained": 10,
+      "ids": [
+        1,
+        4,
+        12,
+        17,
+        18,
+        20,
+        28,
+        33,
+        36,
+        41
+      ],
+      "minimum": 13.19672,
+      "maximum": 266.15942,
+      "mean": 62.13622634146342,
+      "exact_cutoff_count": 0,
+      "cutoff": 90,
+      "units": "ns"
+    }
+  },
+  "candidate_count": 180,
+  "fig1d": {
+    "n": 34,
+    "fraction_of_180": 0.18888888888888888,
+    "J_min": 1.32218,
+    "J_max": 396.24469,
+    "Jstar_min": 0.00145,
+    "Jstar_max": 0.16263,
+    "negative_J": 0,
+    "negative_Jstar": 0,
+    "proposed_probe": {
+      "J_gt": 50.0,
+      "Jstar_gt": 0.01,
+      "pass_count": 7,
+      "source_rows": [
+        2,
+        21,
+        25,
+        26,
+        27,
+        29,
+        30
+      ]
+    },
+    "same_selection_threshold_intervals": {
+      "J_with_Jstar_fixed_0p01": [
+        32.06871,
+        50.81013
+      ],
+      "Jstar_with_J_fixed_50": [
+        0.00342,
+        0.0137
+      ],
+      "interval_convention": "lower inclusive, upper exclusive for strict > predicates"
+    },
+    "identity_status": "No pair IDs in numeric table; Fig.1d visual anchor assessed separately"
+  },
+  "fig1e": {
+    "n": 43,
+    "filtered": 6,
+    "ruled_out": 37,
+    "unmeasured_filtered": {
+      "cat_id": 50,
+      "ps_id": 41
+    },
+    "conditional_confusion": {
+      "assumed_good_criterion": "TON_gt_1370_AND_selectivity_gt_72",
+      "tp": 6,
+      "fp": 0,
+      "fn": 1,
+      "tn": 36,
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "status": "conditional; not an independently recovered author definition"
+    },
+    "conditional_good_threshold_intervals": {
+      "TON_with_selectivity_fixed_72": [
+        1155.0,
+        1404.0
+      ],
+      "selectivity_with_TON_fixed_1370": [
+        70.4,
+        73.2
+      ],
+      "interval_convention": "lower inclusive, upper exclusive"
+    },
+    "false_negative_ids": [
+      {
+        "cat_id": 61,
+        "ps_id": 33
+      }
+    ],
+    "numerical_good_definition_status": "not uniquely identified",
+    "paper_individual_bounds_contradictions": {
+      "ruled_out_TON_ge_1370": 6,
+      "ruled_out_selectivity_ge_72": 10
+    }
+  }
+}

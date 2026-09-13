@@ -1,0 +1,37 @@
+{
+  "source_directory": "orginal",
+  "file_count": 6901,
+  "total_bytes": 85541434,
+  "detected_types": {
+    "pdf": 2,
+    "text": 6894,
+    "xlsx": 5
+  },
+  "roles": {
+    "MD initial/final structure": 6888,
+    "Source Data Extended Data Fig. 4 (publisher label)": 1,
+    "Source Data Fig. 1 workbook": 1,
+    "Source Data Fig. 2 workbook": 1,
+    "Source Data Fig. 3 workbook": 1,
+    "Supplementary Data 1 workbook": 1,
+    "Supplementary Information PDF": 1,
+    "article PDF": 1,
+    "optimized computational structure": 6
+  },
+  "archive_count": 0,
+  "archive_member_count": 0,
+  "ooxml_container_count": 5,
+  "duplicate_byte_groups": [],
+  "maximum_file_bytes": 11898869,
+  "over_100_mib_count": 0,
+  "pdf_parse_status": {
+    "41929_2025_1291_MOESM1_ESM.pdf": "parsed 99 pages",
+    "s41929-025-01291-z.pdf": "parsed 15 pages"
+  },
+  "notes": [
+    "Every original file was hashed and inspected by content, not extension alone.",
+    "XLSX internal ZIP packages are CRC checked; their XML, relationships and embedded objects are audited by inspect_workbooks.py.",
+    "No original-source contents are written by this script.",
+    "Package roles are metadata interpretations and must be reconciled with publisher documentation."
+  ]
+}

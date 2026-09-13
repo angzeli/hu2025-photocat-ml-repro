@@ -1,0 +1,8 @@
+cat_id,ps_id,measured,confidence,source
+1,1,True,exact/direct membership only,SI Table 3 PDF pp77–78
+37,41,True,exact/direct membership only,SI Table 3 PDF pp77–78
+49,1,True,exact/direct membership only,SI Table 3 PDF pp77–78
+49,18,True,exact/direct membership only,SI Table 3 PDF pp77–78
+49,33,True,exact/direct membership only,SI Table 3 PDF pp77–78
+50,41,False,exact/direct membership only,SI Table 3 PDF pp77–78
+61,4,True,exact/direct membership only,SI Table 3 PDF pp77–78

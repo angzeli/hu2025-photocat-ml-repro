@@ -1,0 +1,4 @@
+assumed_good_criterion,tp,fp,fn,tn,precision,recall,status
+TON_gt_1370_AND_selectivity_gt_72,6,0,1,36,1.0,0.8571428571428571,conditional; not an independently recovered author definition
+TON_gt_1370_only,6,0,6,31,1.0,0.5,conditional; not an independently recovered author definition
+selectivity_gt_72_only,6,0,10,27,1.0,0.375,conditional; not an independently recovered author definition

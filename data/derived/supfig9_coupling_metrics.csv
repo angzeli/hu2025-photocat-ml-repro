@@ -1,0 +1,3 @@
+coupling,units,n_values,pearson_r,r2,mae,rmse,calculated_min,calculated_max,calculated_negative,calculated_zero,calculated_positive,predicted_min,predicted_max,predicted_negative,predicted_zero,predicted_positive,opposite_sign_pairs
+J,not_specified,1000,0.9129259525036703,0.8296051038562411,145.67202262,224.14424768117385,-2001.9466,4820.35124,491,0,509,-1869.49846,4539.51599,482,0,518,253
+Jstar,not_specified,1000,0.7475491726345188,0.558007372324488,0.31171133746499996,0.49450789163712733,-3.25842,3.43637,515,0,485,-2.57829,2.8211,520,0,480,257

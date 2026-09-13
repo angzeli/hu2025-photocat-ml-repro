@@ -1,0 +1,717 @@
+{
+  "source": "orginal/41929_2025_1291_MOESM2_ESM.xlsx",
+  "source_axis_interpretation": "SI PDF pp13-17: horizontal calculated; vertical predicted; a/b/c=x/y/z.",
+  "source_ranges": {
+    "fig5_to_8_train": [
+      "A4:B903",
+      "F4:G903",
+      "K4:L903"
+    ],
+    "fig5_to_8_test": [
+      "C4:D103",
+      "H4:I103",
+      "M4:N103"
+    ],
+    "fig9": [
+      "A3:B1002",
+      "D3:E1002"
+    ]
+  },
+  "metric_definitions": {
+    "r2": "1 - sum((predicted-calculated)^2)/sum((calculated-mean(calculated))^2)",
+    "pearson_r": "Centered Pearson correlation, not squared",
+    "mae": "mean(abs(predicted-calculated))",
+    "rmse": "sqrt(mean((predicted-calculated)^2))",
+    "pooled_xyz": "Flatten all three components: 2700 train values or 300 test values; not independent conformations."
+  },
+  "unit_status": "Not specified in workbook labels or SI Fig.5-9 axes/captions. Do not assign Debye or energy units.",
+  "ml_metrics": [
+    {
+      "figure": 5,
+      "target": "catalyst_intrinsic",
+      "split": "train",
+      "component": "x",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.9153513625924716,
+      "r2": 0.8290787344945748,
+      "mae": 1.3164176541855555,
+      "rmse": 2.0134921184436148
+    },
+    {
+      "figure": 5,
+      "target": "catalyst_intrinsic",
+      "split": "train",
+      "component": "y",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.9526359412521619,
+      "r2": 0.9070476353027208,
+      "mae": 1.983062788888889,
+      "rmse": 3.1395778416248716
+    },
+    {
+      "figure": 5,
+      "target": "catalyst_intrinsic",
+      "split": "train",
+      "component": "z",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.9256912277050479,
+      "r2": 0.8505787184053271,
+      "mae": 0.9820424955733335,
+      "rmse": 1.5768445799057391
+    },
+    {
+      "figure": 5,
+      "target": "catalyst_intrinsic",
+      "split": "train",
+      "component": "pooled_xyz",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 2700,
+      "pearson_r": 0.9453558131953644,
+      "r2": 0.8921756551416663,
+      "mae": 1.4271743128825927,
+      "rmse": 2.337914908904553
+    },
+    {
+      "figure": 5,
+      "target": "catalyst_intrinsic",
+      "split": "test",
+      "component": "x",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.9173351637777887,
+      "r2": 0.8377008824955592,
+      "mae": 1.4838898,
+      "rmse": 2.242831417119887
+    },
+    {
+      "figure": 5,
+      "target": "catalyst_intrinsic",
+      "split": "test",
+      "component": "y",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.9777351542703024,
+      "r2": 0.9516273480670588,
+      "mae": 2.0362009999999997,
+      "rmse": 2.611431374739532
+    },
+    {
+      "figure": 5,
+      "target": "catalyst_intrinsic",
+      "split": "test",
+      "component": "z",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.9042033968515396,
+      "r2": 0.8089630771044058,
+      "mae": 1.2652192,
+      "rmse": 1.5163267953993296
+    },
+    {
+      "figure": 5,
+      "target": "catalyst_intrinsic",
+      "split": "test",
+      "component": "pooled_xyz",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 300,
+      "pearson_r": 0.9641681728060204,
+      "r2": 0.9287393761623143,
+      "mae": 1.5951033333333335,
+      "rmse": 2.171720787842366
+    },
+    {
+      "figure": 6,
+      "target": "photosensitizer_intrinsic",
+      "split": "train",
+      "component": "x",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.9801505781342345,
+      "r2": 0.9606016579635938,
+      "mae": 1.291926611111111,
+      "rmse": 1.8133067583402855
+    },
+    {
+      "figure": 6,
+      "target": "photosensitizer_intrinsic",
+      "split": "train",
+      "component": "y",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.9026443272353144,
+      "r2": 0.8125716006711365,
+      "mae": 1.272385388888889,
+      "rmse": 1.6653765995865786
+    },
+    {
+      "figure": 6,
+      "target": "photosensitizer_intrinsic",
+      "split": "train",
+      "component": "z",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.9381573827171288,
+      "r2": 0.8798095099120286,
+      "mae": 0.9100831666666667,
+      "rmse": 1.2963525809519485
+    },
+    {
+      "figure": 6,
+      "target": "photosensitizer_intrinsic",
+      "split": "train",
+      "component": "pooled_xyz",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 2700,
+      "pearson_r": 0.9650315650318472,
+      "r2": 0.9311988703203199,
+      "mae": 1.1581317222222223,
+      "rmse": 1.6064547542579477
+    },
+    {
+      "figure": 6,
+      "target": "photosensitizer_intrinsic",
+      "split": "test",
+      "component": "x",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.9771814268225364,
+      "r2": 0.9542089443485836,
+      "mae": 1.4389446000000001,
+      "rmse": 1.8473031277356728
+    },
+    {
+      "figure": 6,
+      "target": "photosensitizer_intrinsic",
+      "split": "test",
+      "component": "y",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.9082282980292571,
+      "r2": 0.8177668098570829,
+      "mae": 1.0870366800000002,
+      "rmse": 1.2979909836085302
+    },
+    {
+      "figure": 6,
+      "target": "photosensitizer_intrinsic",
+      "split": "test",
+      "component": "z",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.9460055750011449,
+      "r2": 0.8938131874691911,
+      "mae": 0.8956522,
+      "rmse": 1.3392638831104196
+    },
+    {
+      "figure": 6,
+      "target": "photosensitizer_intrinsic",
+      "split": "test",
+      "component": "pooled_xyz",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 300,
+      "pearson_r": 0.9655379528833585,
+      "r2": 0.931915267788006,
+      "mae": 1.1405444933333333,
+      "rmse": 1.5155787879965243
+    },
+    {
+      "figure": 7,
+      "target": "catalyst_transition",
+      "split": "train",
+      "component": "x",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.8564213621458945,
+      "r2": 0.7297659836396087,
+      "mae": 0.03165081947377778,
+      "rmse": 0.05125975989712859
+    },
+    {
+      "figure": 7,
+      "target": "catalyst_transition",
+      "split": "train",
+      "component": "y",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.8476922778152396,
+      "r2": 0.6924045452518446,
+      "mae": 0.03678304373822223,
+      "rmse": 0.06834074394796323
+    },
+    {
+      "figure": 7,
+      "target": "catalyst_transition",
+      "split": "train",
+      "component": "z",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.8517770480324602,
+      "r2": 0.6930845147459647,
+      "mae": 0.03029718050011111,
+      "rmse": 0.04472615189422069
+    },
+    {
+      "figure": 7,
+      "target": "catalyst_transition",
+      "split": "train",
+      "component": "pooled_xyz",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 2700,
+      "pearson_r": 0.8446950660881588,
+      "r2": 0.7041060078772443,
+      "mae": 0.03291034790403704,
+      "rmse": 0.05567300043209828
+    },
+    {
+      "figure": 7,
+      "target": "catalyst_transition",
+      "split": "test",
+      "component": "x",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.8814819289488409,
+      "r2": 0.7767631002017378,
+      "mae": 0.028748923569999998,
+      "rmse": 0.04065435181947983
+    },
+    {
+      "figure": 7,
+      "target": "catalyst_transition",
+      "split": "test",
+      "component": "y",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.8565537356344103,
+      "r2": 0.7300661199232132,
+      "mae": 0.03569678588,
+      "rmse": 0.05643300101356212
+    },
+    {
+      "figure": 7,
+      "target": "catalyst_transition",
+      "split": "test",
+      "component": "z",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.920696329865044,
+      "r2": 0.8067929400461261,
+      "mae": 0.02903298,
+      "rmse": 0.04115270230738195
+    },
+    {
+      "figure": 7,
+      "target": "catalyst_transition",
+      "split": "test",
+      "component": "pooled_xyz",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 300,
+      "pearson_r": 0.879775059848105,
+      "r2": 0.7681869020009154,
+      "mae": 0.03115956315,
+      "rmse": 0.046658349851013615
+    },
+    {
+      "figure": 8,
+      "target": "photosensitizer_transition",
+      "split": "train",
+      "component": "x",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.8492032917536068,
+      "r2": 0.7204043526409167,
+      "mae": 0.2565443777777778,
+      "rmse": 0.331029012731177
+    },
+    {
+      "figure": 8,
+      "target": "photosensitizer_transition",
+      "split": "train",
+      "component": "y",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.8964673007404951,
+      "r2": 0.7911053630872724,
+      "mae": 0.10215379852555556,
+      "rmse": 0.1360670802492007
+    },
+    {
+      "figure": 8,
+      "target": "photosensitizer_transition",
+      "split": "train",
+      "component": "z",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 900,
+      "pearson_r": 0.8681372324285292,
+      "r2": 0.7330825735791624,
+      "mae": 0.2171505566666667,
+      "rmse": 0.2899680540110295
+    },
+    {
+      "figure": 8,
+      "target": "photosensitizer_transition",
+      "split": "train",
+      "component": "pooled_xyz",
+      "n_samples": 900,
+      "units": "not_specified",
+      "n_values": 2700,
+      "pearson_r": 0.8624152700129744,
+      "r2": 0.7410050049149852,
+      "mae": 0.19194957765666665,
+      "rmse": 0.2659423057383334
+    },
+    {
+      "figure": 8,
+      "target": "photosensitizer_transition",
+      "split": "test",
+      "component": "x",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.8463067841552493,
+      "r2": 0.7059038666266935,
+      "mae": 0.26795899999999995,
+      "rmse": 0.3553691693914935
+    },
+    {
+      "figure": 8,
+      "target": "photosensitizer_transition",
+      "split": "test",
+      "component": "y",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.8881553158469317,
+      "r2": 0.7711343050622427,
+      "mae": 0.11321933708000001,
+      "rmse": 0.15371748870817234
+    },
+    {
+      "figure": 8,
+      "target": "photosensitizer_transition",
+      "split": "test",
+      "component": "z",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 100,
+      "pearson_r": 0.8934936606848638,
+      "r2": 0.7736586160062222,
+      "mae": 0.21595474999999997,
+      "rmse": 0.2877018127423774
+    },
+    {
+      "figure": 8,
+      "target": "photosensitizer_transition",
+      "split": "test",
+      "component": "pooled_xyz",
+      "n_samples": 100,
+      "units": "not_specified",
+      "n_values": 300,
+      "pearson_r": 0.8643359654850252,
+      "r2": 0.745102804023604,
+      "mae": 0.19904436235999998,
+      "rmse": 0.2785011346140844
+    }
+  ],
+  "coupling_metrics": [
+    {
+      "coupling": "J",
+      "units": "not_specified",
+      "n_values": 1000,
+      "pearson_r": 0.9129259525036703,
+      "r2": 0.8296051038562411,
+      "mae": 145.67202262,
+      "rmse": 224.14424768117385,
+      "calculated_min": -2001.9466,
+      "calculated_max": 4820.35124,
+      "calculated_negative": 491,
+      "calculated_zero": 0,
+      "calculated_positive": 509,
+      "predicted_min": -1869.49846,
+      "predicted_max": 4539.51599,
+      "predicted_negative": 482,
+      "predicted_zero": 0,
+      "predicted_positive": 518,
+      "opposite_sign_pairs": 253
+    },
+    {
+      "coupling": "Jstar",
+      "units": "not_specified",
+      "n_values": 1000,
+      "pearson_r": 0.7475491726345188,
+      "r2": 0.558007372324488,
+      "mae": 0.31171133746499996,
+      "rmse": 0.49450789163712733,
+      "calculated_min": -3.25842,
+      "calculated_max": 3.43637,
+      "calculated_negative": 515,
+      "calculated_zero": 0,
+      "calculated_positive": 485,
+      "predicted_min": -2.57829,
+      "predicted_max": 2.8211,
+      "predicted_negative": 520,
+      "predicted_zero": 0,
+      "predicted_positive": 480,
+      "opposite_sign_pairs": 257
+    }
+  ],
+  "row_alignment": {
+    "classification": "strongly supported for numerical pairing within intrinsic and transition blocks; common structural identity unproven",
+    "sequence": "Train rows 4:903 followed by test rows 4:103, independently for every dipole sheet",
+    "equation": "J_or_Jstar = s * (-2*CAT_x*PS_x + CAT_y*PS_y + CAT_z*PS_z)",
+    "shared_scale": 5.034063649307054,
+    "scale_estimation": "Zero-intercept scalar proportionality from first 900 calculated J rows only",
+    "probes": [
+      {
+        "coupling": "J",
+        "channel": "calculated",
+        "shared_fixed_scale_metrics": {
+          "n_values": 1000,
+          "pearson_r": 0.9999999999998014,
+          "r2": 0.9999999999996017,
+          "mae": 0.00026679295695181853,
+          "rmse": 0.0003426978615162201
+        },
+        "first_900_metrics": {
+          "n_values": 900,
+          "pearson_r": 0.9999999999997972,
+          "r2": 0.999999999999592,
+          "mae": 0.0002695877697883994,
+          "rmse": 0.00034680345170146754
+        },
+        "last_100_metrics": {
+          "n_values": 100,
+          "pearson_r": 0.9999999999998681,
+          "r2": 0.9999999999996879,
+          "mae": 0.00024163964142259075,
+          "rmse": 0.0003032565512391034
+        },
+        "channel_descriptive_scale": 5.03406373653382,
+        "maximum_absolute_residual": 0.00211157864487177,
+        "absolute_residual_quantiles": {
+          "0.5": 0.0002300378273432102,
+          "0.95": 0.0006476802858756514,
+          "0.99": 0.0010404888092307373
+        },
+        "test_then_train_control": {
+          "n_values": 1000,
+          "pearson_r": 0.08291871334739545,
+          "r2": -0.8341625393717857,
+          "mae": 488.2966380472803,
+          "rmse": 735.3908406326408
+        },
+        "one_row_shift_control": {
+          "n_values": 1000,
+          "pearson_r": 0.026909720213414843,
+          "r2": -0.9461805235673271,
+          "mae": 501.9876045967953,
+          "rmse": 757.514356026406
+        },
+        "permutation_control": {
+          "count": 100,
+          "seed": 20250913,
+          "min_pearson_r": -0.0801384808461823,
+          "max_pearson_r": 0.09369596009674057
+        }
+      },
+      {
+        "coupling": "J",
+        "channel": "predicted",
+        "shared_fixed_scale_metrics": {
+          "n_values": 1000,
+          "pearson_r": 0.9999999957094613,
+          "r2": 0.999999991169988,
+          "mae": 0.006879812723054571,
+          "rmse": 0.043528852935731784
+        },
+        "first_900_metrics": {
+          "n_values": 900,
+          "pearson_r": 0.9999999999997515,
+          "r2": 0.999999999999502,
+          "mae": 0.00025084713179605167,
+          "rmse": 0.0003251735644812476
+        },
+        "last_100_metrics": {
+          "n_values": 100,
+          "pearson_r": 0.9999999699550883,
+          "r2": 0.9999999192691608,
+          "mae": 0.06654050304438125,
+          "rmse": 0.13764686243566293
+        },
+        "channel_descriptive_scale": 5.034138701883765,
+        "maximum_absolute_residual": 0.6664778790873243,
+        "absolute_residual_quantiles": {
+          "0.5": 0.0002475335063039097,
+          "0.95": 0.014946186050545393,
+          "0.99": 0.24728996782742846
+        },
+        "test_then_train_control": {
+          "n_values": 1000,
+          "pearson_r": 0.06889988849660855,
+          "r2": -0.8621730545697222,
+          "mae": 403.54629364631467,
+          "rmse": 632.1302788841672
+        },
+        "one_row_shift_control": {
+          "n_values": 1000,
+          "pearson_r": 0.05048725748830745,
+          "r2": -0.8989977793218706,
+          "mae": 401.54248267914915,
+          "rmse": 638.3499118975881
+        },
+        "permutation_control": {
+          "count": 100,
+          "seed": 20250913,
+          "min_pearson_r": -0.07548377842213626,
+          "max_pearson_r": 0.08872416024087924
+        }
+      },
+      {
+        "coupling": "Jstar",
+        "channel": "calculated",
+        "shared_fixed_scale_metrics": {
+          "n_values": 1000,
+          "pearson_r": 0.9999995747069105,
+          "r2": 0.9999991454883189,
+          "mae": 0.0002524129943211198,
+          "rmse": 0.0006875823435264527
+        },
+        "first_900_metrics": {
+          "n_values": 900,
+          "pearson_r": 0.9999995814683558,
+          "r2": 0.9999991596038728,
+          "mae": 0.00023892441462162241,
+          "rmse": 0.0006885686725194408
+        },
+        "last_100_metrics": {
+          "n_values": 100,
+          "pearson_r": 0.999999512560584,
+          "r2": 0.9999989879866749,
+          "mae": 0.00037381021161659624,
+          "rmse": 0.0006786408772809236
+        },
+        "channel_descriptive_scale": 5.034376717345194,
+        "maximum_absolute_residual": 0.009762905537451516,
+        "absolute_residual_quantiles": {
+          "0.5": 8.708115784064607e-05,
+          "0.95": 0.0008334278317512987,
+          "0.99": 0.0026954449453026217
+        },
+        "test_then_train_control": {
+          "n_values": 1000,
+          "pearson_r": 0.016030451715328926,
+          "r2": -0.9678158647388271,
+          "mae": 0.7550072930191807,
+          "rmse": 1.043417082911551
+        },
+        "one_row_shift_control": {
+          "n_values": 1000,
+          "pearson_r": -0.03198639464246274,
+          "r2": -1.0638435436555786,
+          "mae": 0.7656286283130035,
+          "rmse": 1.0685727613220244
+        },
+        "permutation_control": {
+          "count": 100,
+          "seed": 20250913,
+          "min_pearson_r": -0.08937708988799697,
+          "max_pearson_r": 0.06946056019474534
+        }
+      },
+      {
+        "coupling": "Jstar",
+        "channel": "predicted",
+        "shared_fixed_scale_metrics": {
+          "n_values": 1000,
+          "pearson_r": 0.9999996276818733,
+          "r2": 0.9999992470220839,
+          "mae": 0.00019670115890206794,
+          "rmse": 0.0004639913569879196
+        },
+        "first_900_metrics": {
+          "n_values": 900,
+          "pearson_r": 0.9999996275305868,
+          "r2": 0.9999992522783664,
+          "mae": 0.00019527094720972948,
+          "rmse": 0.00046346224285855856
+        },
+        "last_100_metrics": {
+          "n_values": 100,
+          "pearson_r": 0.9999997064434917,
+          "r2": 0.9999991893438784,
+          "mae": 0.00020957306413311414,
+          "rmse": 0.0004687265072465396
+        },
+        "channel_descriptive_scale": 5.034512595500717,
+        "maximum_absolute_residual": 0.005837998123706001,
+        "absolute_residual_quantiles": {
+          "0.5": 7.426592737021231e-05,
+          "0.95": 0.0006879088020149026,
+          "0.99": 0.0019183416052412589
+        },
+        "test_then_train_control": {
+          "n_values": 1000,
+          "pearson_r": -0.04454769351761235,
+          "r2": -1.0889082241597725,
+          "mae": 0.5062109259845413,
+          "rmse": 0.7728201750251765
+        },
+        "one_row_shift_control": {
+          "n_values": 1000,
+          "pearson_r": -0.012564998986119973,
+          "r2": -1.0249485660385464,
+          "mae": 0.5110645526730122,
+          "rmse": 0.760896820811771
+        },
+        "permutation_control": {
+          "count": 100,
+          "seed": 20250913,
+          "min_pearson_r": -0.08982765421041583,
+          "max_pearson_r": 0.07618059359369235
+        }
+      }
+    ],
+    "physical_interpretation": "Consistent with a fixed dipole tensor whose separation axis is x. It does not recover distance, units, dielectric factor, or original coordinate convention.",
+    "within_intrinsic_5_6_to_9a": "strongly supported",
+    "within_transition_7_8_to_9b": "strongly supported",
+    "all_four_targets_same_structural_conformation_pair": "plausible",
+    "missing": [
+      "Molecule/conformation/snapshot IDs in dipole and coupling rows",
+      "A mapping from released numerical rows to coordinate files",
+      "Explicit correspondence between intrinsic and transition structural samples",
+      "Original train/test assignment indices before separate plotted blocks"
+    ],
+    "limitation": "Numerical row consistency is strong evidence of calculation ordering, not proof of shared physical conformations or recovery of ML input X."
+  },
+  "source_array_storage": "Complete recovered arrays only in ignored forensics/local_only/; never stage or commit these CSV files."
+}

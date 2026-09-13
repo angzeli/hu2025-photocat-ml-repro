@@ -1,0 +1,38 @@
+{
+  "sources": {
+    "si": "orginal/41929_2025_1291_MOESM1_ESM.pdf; PDF pages 73-78, printed SI pages 72-77",
+    "descriptors": "orginal/41929_2025_1291_MOESM2_ESM.xlsx; Supplementary Fig. 1 and 2",
+    "validation": "orginal/41929_2025_1291_MOESM11_ESM.xlsx; Fig.1e"
+  },
+  "table1_count": 84,
+  "table2_count": 41,
+  "cat_index_order_rounding_mismatches": [],
+  "ps_index_order_rounding_mismatches": [],
+  "table3": {
+    "rows_including_unmeasured": 44,
+    "filtered": 7,
+    "filtered_measured": 6,
+    "ruled_out_measured": 37,
+    "fig1e_measured_rows": 43,
+    "workbook_si_value_discrepancies": [],
+    "unmeasured_identity": {
+      "cat_id": 50,
+      "ps_id": 41
+    },
+    "additional_source_columns": [
+      "TOF_CO (h^-1)",
+      "irradiation time (h)"
+    ],
+    "complete_table_storage": "ignored forensics/local_only/si_table3_source.csv only",
+    "illustrative_joint_rule": "TON_CO > 1370 AND CO selectivity (%) > 72; not uniquely specified by authors",
+    "true_positive": 6,
+    "false_positive": 0,
+    "false_negative": 1,
+    "true_negative": 36,
+    "conditional_precision": 1.0,
+    "conditional_recall": 0.8571428571428571,
+    "other_ruled_out_TON_not_below_1370": 5,
+    "other_ruled_out_selectivity_not_below_72": 9
+  },
+  "boundary": "Tracked outputs contain counts/concordance/classifications; complete table extraction remains in ignored local_only."
+}
