@@ -1,0 +1,35 @@
+# Immutable publisher/author evidence: local only, including future copies.
+orginal/
+original/
+forensics/local_only/
+data/local_only/
+downloads/
+extracted/
+# Original document, workbook, archive, coordinate and model packages must not enter Git.
+*.pdf
+*.xlsx
+*.xls
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.7z
+*.rar
+*.xyz
+*.pdb
+*.cif
+*.dcd
+*.xtc
+*.trr
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
