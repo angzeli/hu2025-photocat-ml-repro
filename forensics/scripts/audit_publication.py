@@ -15,8 +15,9 @@ from pathlib import Path
 import re
 import subprocess
 
+from publication_artifacts import REVIEWED_FIGURES, allowed_path, reviewed_figure_text
+
 ROOT = Path(__file__).resolve().parents[2]
-TEXT_TYPES = {'.py', '.md', '.csv', '.json', '.yaml', '.yml'}
 EMAIL = re.compile(r'(?<![\w.+-])[A-Za-z0-9_.+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')
 PATTERNS = {
     'local_filesystem_path': re.compile(r'/(?:Users|home|private/(?:tmp|var)|tmp|var/folders)/[^\s`"<>]+'),
@@ -70,8 +71,7 @@ def main():
 
     def scan_path(name, location):
         scan_identifiers(name, name, location)
-        if (name.startswith(('orginal/', 'original/', 'forensics/local_only/', 'data/local_only/'))
-                or not (name == '.gitignore' or Path(name).suffix in TEXT_TYPES)):
+        if not allowed_path(name):
             findings.append(dict(location=location, path=name, category='unapproved_path_or_type'))
         if Path(name).name.startswith('.env') or any(part in ('.ssh', '.aws', '.azure') for part in Path(name).parts):
             findings.append(dict(location=location, path=name, category='credential_file'))
@@ -82,6 +82,14 @@ def main():
                 scan_path(name, location)
             if hashlib.sha256(data).hexdigest() in original_hashes:
                 findings.append(dict(location=location, path=name, category='exact_original_copy'))
+            if name in REVIEWED_FIGURES:
+                try:
+                    metadata = reviewed_figure_text(name, data)
+                except Exception:
+                    findings.append(dict(location=location, path=name, category='unreviewed_or_unreadable_figure'))
+                else:
+                    scan_identifiers(metadata, name, location)
+                return
             if data.startswith((b'%PDF-', b'PK\x03\x04', b'\x1f\x8b', b'version https://git-lfs.github.com/spec/v1')):
                 findings.append(dict(location=location, path=name, category='source_archive_or_lfs_signature'))
         try:
@@ -107,6 +115,7 @@ def main():
     commits = git('rev-list', '--all').decode().splitlines()
     commit_objects = {entry.partition(' ')[0] for entry in git('rev-list', '--objects', *commits).decode().splitlines()}
     historical_paths = 0
+    reviewed_pairs = set()
     for commit in commits:
         scan('commit metadata', git('cat-file', 'commit', commit), commit, is_commit=True)
         # A blob can occur at multiple paths, including a forbidden historical
@@ -114,8 +123,15 @@ def main():
         # every commit tree separately while keeping content scans deduplicated.
         for entry in git('ls-tree', '-r', '-z', commit).split(b'\0'):
             if entry:
-                _, name = entry.split(b'\t', 1)
-                scan_path(name.decode(), commit)
+                info, name_bytes = entry.split(b'\t', 1)
+                name = name_bytes.decode()
+                scan_path(name, commit)
+                oid = info.split()[2].decode()
+                if name in REVIEWED_FIGURES and (name, oid) not in reviewed_pairs:
+                    # Byte approval is path-specific: a representative object
+                    # name cannot authorize a different historical figure alias.
+                    scan(name, git('cat-file', 'blob', oid), commit, check_path=False)
+                    reviewed_pairs.add((name, oid))
                 historical_paths += 1
     historical_blobs = 0
     auxiliary_blobs = 0

@@ -7,6 +7,11 @@ downloads/
 extracted/
 # Original document, workbook, archive, coordinate and model packages must not enter Git.
 *.pdf
+# Only independently drawn, reviewed analytical figures may enter Git.
+!/figures/derived/reproducibility_ladder.pdf
+!/figures/derived/ml_quality.pdf
+!/figures/derived/coupling_error_decomposition.pdf
+!/figures/derived/screening_sensitivity.pdf
 *.xlsx
 *.xls
 *.zip

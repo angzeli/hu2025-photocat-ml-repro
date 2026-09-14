@@ -1,0 +1,130 @@
+{
+  "scope": "Local validation of the unreleased v0.1.0 review candidate; not CI, a release or scientific approval.",
+  "baseline_commit": "5433c202eea04ee5ac30b70d785dde97ba33538b",
+  "canonical_version_file": "CITATION.cff",
+  "python_version": "3.12.14",
+  "direct_dependencies": {
+    "numpy": "2.3.5",
+    "openpyxl": "3.1.5",
+    "pypdf": "6.10.0",
+    "matplotlib": "3.10.8"
+  },
+  "rendering_dependencies": {
+    "Pillow": "12.3.0",
+    "fonttools": "4.65.0",
+    "contourpy": "1.4.0",
+    "kiwisolver": "1.5.1",
+    "pyparsing": "3.3.2"
+  },
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python -m unittest discover -s tests -v",
+    "passed": 34,
+    "failed": 0,
+    "existing_scientific_tests": 28,
+    "publication_boundary_tests": 6,
+    "historical_deleted_alias_regression_passed": true
+  },
+  "phase2_reruns": {
+    "scripts": [
+      "forensics/scripts/analyze_ml_vectors.py",
+      "forensics/scripts/analyze_error_propagation.py",
+      "forensics/scripts/analyze_screening_sensitivity.py"
+    ],
+    "all_completed": true,
+    "analytical_outputs_identical_to_baseline": true,
+    "scalar_refitted": false
+  },
+  "figures": {
+    "generator": "scripts/build_public_figures.py",
+    "count": 4,
+    "formats": [
+      "png",
+      "pdf"
+    ],
+    "publisher_inputs_required": false,
+    "second_build_all_bytes_identical": true,
+    "font_cache_rebuilt_for_second_build": true,
+    "font": "Matplotlib bundled DejaVu Sans",
+    "png_dpi": 600,
+    "all_png_and_poppler_rendered_pdf_pages_visually_reviewed": true,
+    "all_pdfs_single_page": true,
+    "timestamp_or_private_metadata_findings": 0,
+    "reviewed_artifacts": [
+      {
+        "path": "figures/derived/coupling_error_decomposition.pdf",
+        "sha256": "e0807622835f9a017413ffb11225cc43b28f6b7d8debdf76eb0a4721a360d7a4",
+        "bytes": 23975
+      },
+      {
+        "path": "figures/derived/coupling_error_decomposition.png",
+        "sha256": "2ae73c5463c782c1070d765da7cfd5e7f05419e1f6076ef5e57c506e827b0a2e",
+        "bytes": 404892
+      },
+      {
+        "path": "figures/derived/ml_quality.pdf",
+        "sha256": "d370c5f3547b7552c192642721cce9dba238fda6c48b6fd2b023137ef4a6882f",
+        "bytes": 18986
+      },
+      {
+        "path": "figures/derived/ml_quality.png",
+        "sha256": "ab125b72b7e8d1009815198f3d1ef9c92e7c282e3017009b5f6f9e2661ae1661",
+        "bytes": 357458
+      },
+      {
+        "path": "figures/derived/reproducibility_ladder.pdf",
+        "sha256": "564adbe27136a709d39cb5cedb4a1ff86eadba809cc122f63331003e7b971bfa",
+        "bytes": 23120
+      },
+      {
+        "path": "figures/derived/reproducibility_ladder.png",
+        "sha256": "0553f423feb2ec7a359fab79f429247e346ff0628225a89468f0f3e30b620c7d",
+        "bytes": 541128
+      },
+      {
+        "path": "figures/derived/screening_sensitivity.pdf",
+        "sha256": "bdae0e05c21a421727cf0eb4c25bb412473aa163be28e2336c8c117bd42b2d56",
+        "bytes": 34092
+      },
+      {
+        "path": "figures/derived/screening_sensitivity.png",
+        "sha256": "a60096278dd25a2e965620b59238b235d93a998ca556ef4c39c07a4f4ca71013",
+        "bytes": 417161
+      }
+    ],
+    "byte_reproducibility_scope": "Verified in the reference rendering environment; different dependency/platform rendering requires review before new hashes are approved."
+  },
+  "documentation": {
+    "document_links_checked": 50,
+    "broken_links": [],
+    "citation_yaml_and_required_fields_valid": true,
+    "dependency_versions": {
+      "numpy": "2.3.5",
+      "openpyxl": "3.1.5",
+      "pypdf": "6.10.0",
+      "matplotlib": "3.10.8"
+    }
+  },
+  "source_integrity": {
+    "original_file_count": 6901,
+    "original_bytes": 85541434,
+    "manifest_hashes_and_sizes_match": true,
+    "pre_analysis_hashes_sizes_mtimes_match": true,
+    "original_subtree_fully_ignored": true
+  },
+  "publication_audit": {
+    "reachable_baseline_commits": 4,
+    "reachable_baseline_blobs": 81,
+    "baseline_history_and_candidate_working_files_findings": 0,
+    "auxiliary_noncommit_findings": 0,
+    "exact_path_and_reviewed_digest_required_for_binary_figures": true,
+    "manual_source_transformation_review_passed": true,
+    "limit": "Pattern, type, exact-copy and path/digest checks plus manual content review; not a universal absence-of-secrets guarantee. Index and new commit history are rechecked around commit; remote refs are checked separately."
+  },
+  "execution_boundary": {
+    "new_md_qm_tddft_or_structure_jobs": 0,
+    "models_trained": 0,
+    "optimizer_steps": 0,
+    "new_scientific_analysis": false
+  },
+  "release_status": "Unreleased candidate; human review and separate final-release authorization required."
+}

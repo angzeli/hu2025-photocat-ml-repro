@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the original article when using this reproduction. Version 0.1.0 is an unreleased candidate for review."
+type: software
+title: "Hu 2025 Photocatalysis ML Reproduction"
+authors:
+  - family-names: "Squiddy"
+repository-code: "https://github.com/angzeli/hu2025-photocat-ml-repro"
+version: "0.1.0"
+license: MIT
+abstract: "Independent source-data reproduction and forensic reimplementation of the ML evaluation and dipole-coupling/screening workflow of Hu et al. (2025), without new MD, quantum chemistry or model training. Publisher source materials are excluded and are not relicensed."
+references:
+  - type: article
+    title: "Identifying a highly efficient molecular photocatalytic CO2 reduction system via descriptor-based high-throughput screening"
+    authors:
+      - family-names: Hu
+        given-names: Yangguang
+      - family-names: Yu
+        given-names: Can
+      - family-names: Wang
+        given-names: Song
+      - family-names: Wang
+        given-names: Qian
+      - family-names: Reinhard
+        given-names: Marco
+      - family-names: Zhang
+        given-names: Guozhen
+      - family-names: Zhan
+        given-names: Fei
+      - family-names: Wang
+        given-names: Hao
+      - family-names: Skoien
+        given-names: Dean
+      - family-names: Kroll
+        given-names: Thomas
+      - family-names: Su
+        given-names: Peiyuan
+      - family-names: Li
+        given-names: Lei
+      - family-names: Chen
+        given-names: Aobo
+      - family-names: Liu
+        given-names: Guangyu
+      - family-names: Lv
+        given-names: Haifeng
+      - family-names: Sokaras
+        given-names: Dimosthenis
+      - family-names: Gao
+        given-names: Chao
+      - family-names: Jiang
+        given-names: Jun
+      - family-names: Tao
+        given-names: Ye
+      - family-names: Xiong
+        given-names: Yujie
+    journal: Nature Catalysis
+    year: 2025
+    volume: 8
+    start: 126
+    end: 136
+    doi: "10.1038/s41929-025-01291-z"

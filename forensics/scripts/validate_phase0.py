@@ -13,6 +13,8 @@ import math
 from pathlib import Path
 import subprocess
 
+from publication_artifacts import REVIEWED_FIGURES, allowed_path, reviewed_figure_text
+
 ROOT = Path(__file__).resolve().parents[2]
 
 
@@ -96,16 +98,21 @@ def main():
     sizes = {}
 
     def inspect_blob(name, content):
-        allowed = name == '.gitignore' or Path(name).suffix in {'.py', '.md', '.csv', '.json', '.yaml', '.yml'}
-        if not allowed or name.startswith(('orginal/', 'original/', 'forensics/local_only/', 'data/local_only/')):
+        if not allowed_path(name):
             rejected.append(f'Unapproved tracked source/type: {name}')
         if hashlib.sha256(content).hexdigest() in original_hashes:
             rejected.append(f'Exact original-file copy: {name}')
+        if name in REVIEWED_FIGURES:
+            try:
+                reviewed_figure_text(name, content)
+            except Exception as error:
+                rejected.append(f'Unreviewed or unreadable derived figure: {name} ({type(error).__name__})')
+            return
         if content.startswith((b'%PDF-', b'PK\x03\x04', b'\x1f\x8b', b'version https://git-lfs.github.com/spec/v1')):
             rejected.append(f'Forbidden source/archive/LFS bytes: {name}')
         if name.endswith('.gitattributes') and b'filter=lfs' in content:
             rejected.append(f'LFS rule: {name}')
-        content.decode('utf-8')  # All permitted Phase-0 artifacts are inspectable text.
+        content.decode('utf-8')  # Other permitted artifacts remain inspectable text.
 
     for name in tracked:
         content = git('show', ':' + name)
@@ -113,6 +120,16 @@ def main():
         if name in staged:
             sizes[name] = len(content)
     historical_blobs = 0
+    reviewed_pairs = set()
+    for commit in git('rev-list', '--all').decode().splitlines():
+        for entry in git('ls-tree', '-r', '-z', commit).split(b'\0'):
+            if entry:
+                info, name_bytes = entry.split(b'\t', 1)
+                name = name_bytes.decode()
+                oid = info.split()[2].decode()
+                if name in REVIEWED_FIGURES and (name, oid) not in reviewed_pairs:
+                    inspect_blob(name, git('cat-file', 'blob', oid))
+                    reviewed_pairs.add((name, oid))
     objects = git('rev-list', '--objects', '--all').decode().splitlines()
     for line in objects:
         oid, _, name = line.partition(' ')
