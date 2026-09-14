@@ -1,6 +1,7 @@
 # Reproduce the released-data analysis
 
-This guide reproduces the evaluation and analytic results described in the
+This guide accompanies v0.1.0, dated 2026-09-14, and reproduces the evaluation and
+analytic results described in the
 [ML reproduction note](ML_REPRODUCTION_NOTE.md). It performs ordinary CPU array
 analysis and plotting. It does not run MD, QM, TDDFT, structure optimization,
 model training, or scientific jobs. The [optional compute plan](COMPUTE_PLAN.md)
@@ -38,8 +39,9 @@ PYTHONDONTWRITEBYTECODE=1 python scripts/build_public_figures.py
 
 Tests use entirely synthetic values. They check physical coupling, unit conversions,
 vector/rank metrics, exact error decomposition and the disclosed untrained architecture
-specification, plus the narrow publication-artifact boundary. The local candidate
-passed all 34 tests: 28 analytical/architecture tests and six publication-boundary
+specification, plus the narrow publication-artifact boundary. The historical Phase-3
+reference suite passed all 34 tests: 28 analytical/architecture tests and six
+publication-boundary
 regressions. A passing architecture test does not create or train a model.
 
 The figure script reads the committed analytical JSON/CSV summaries, so `orginal/`
@@ -113,7 +115,7 @@ Phase-1 scalar. Their outputs and success conditions are:
 
 | Command | Principal outputs | Expected verification |
 |---|---|---|
-| `analyze_ml_vectors.py` | `data/derived/ml_scalar_metrics.csv`, `ml_vector_metrics.csv`, `coupling_rank_metrics.csv`; `forensics/outputs/phase2_ml_vectors.json` | 32 scalar records match Phase 0; 24 threshold-specific vector summaries; six coupling block summaries |
+| `analyze_ml_vectors.py` | `data/derived/ml_scalar_metrics.csv`, `ml_vector_metrics.csv`, `coupling_rank_metrics.csv`; `forensics/outputs/phase2_ml_vectors.json` | 32 scalar metric records computed from released predictions match Phase 0; 24 threshold-specific vector summaries; six coupling block summaries |
 | `analyze_error_propagation.py` | `data/derived/ml_error_propagation.csv`; `forensics/outputs/phase2_error_propagation.json` | Frozen tensor/scalar reproduce the four coupling channels to recorded residuals; CAT/PS/cross expansion closes to floating-point precision |
 | `analyze_screening_sensitivity.py` | `data/derived/screening_sensitivity.csv`; `forensics/outputs/phase2_screening.json` | 34 positive points; seven pass the compatibility probe; 49 grid cells; all 43 measured SI/workbook rows agree |
 
@@ -184,8 +186,16 @@ its findings alongside the [source policy](SOURCE_POLICY.md); neither a passing
 pattern scan nor an ignored filename proves that every transformed source table is safe
 to distribute. No publisher or author source material is relicensed by this project.
 
-The [local candidate validation record](../forensics/outputs/phase3_validation.json)
+The [historical Phase-3 validation record](../forensics/outputs/phase3_validation.json)
 documents the 34 passing tests, three successful source-analysis reruns with unchanged
 Phase-2 output bytes, repeat figure builds, visual review, unchanged hashes/sizes/mtimes
 for all 6,901 originals, and zero source/privacy findings across the audited files and
-history. These are local candidate checks, not remote CI results or release publication.
+history. These checks describe the reviewed baseline before final release metadata
+changes. They are local validation evidence, not remote CI results.
+
+The final v0.1.0 checks also passed all 34 tests and the three Phase-2 analyses,
+with unchanged analytical outputs and eight regenerated figures matching the
+reviewed bytes. All 6,901 original hashes, sizes and modification times remained
+unchanged; source/privacy audits of release content and reachable history reported
+zero findings. This final verification was performed locally, without scientific
+simulation, model training or remote CI.

@@ -1,11 +1,13 @@
 cff-version: 1.2.0
-message: "Please cite this repository and the original article when using this reproduction. Version 0.1.0 is an unreleased candidate for review."
+message: "Please cite this repository and the original article when using this reproduction."
 type: software
 title: "Hu 2025 Photocatalysis ML Reproduction"
 authors:
-  - family-names: "Squiddy"
+  - family-names: "Li"
+    given-names: "Angze"
 repository-code: "https://github.com/angzeli/hu2025-photocat-ml-repro"
 version: "0.1.0"
+date-released: "2026-09-14"
 license: MIT
 abstract: "Independent source-data reproduction and forensic reimplementation of the ML evaluation and dipole-coupling/screening workflow of Hu et al. (2025), without new MD, quantum chemistry or model training. Publisher source materials are excluded and are not relicensed."
 references:

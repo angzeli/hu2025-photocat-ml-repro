@@ -1,5 +1,5 @@
 {
-  "scope": "Local validation of the unreleased v0.1.0 review candidate; not CI, a release or scientific approval.",
+  "scope": "Historical Phase-3 pre-release validation snapshot; these local checks are not CI or scientific approval. Current release metadata is in CITATION.cff.",
   "baseline_commit": "5433c202eea04ee5ac30b70d785dde97ba33538b",
   "canonical_version_file": "CITATION.cff",
   "python_version": "3.12.14",
@@ -126,5 +126,5 @@
     "optimizer_steps": 0,
     "new_scientific_analysis": false
   },
-  "release_status": "Unreleased candidate; human review and separate final-release authorization required."
+  "release_status": "Historical status at Phase 3: pre-release review. Superseded by the final release described in CITATION.cff and docs/RELEASE_NOTES_v0.1.0.md."
 }

@@ -5,7 +5,7 @@ evaluation and downstream dipole-coupling/screening workflow in
 [Hu et al., *Nature Catalysis* **8**, 126–136 (2025)](https://doi.org/10.1038/s41929-025-01291-z).
 The project evaluates released predictions and reconstructs their downstream algebra
 without rerunning molecular dynamics, quantum chemistry or neural-network training.
-**Version 0.1.0 is an unreleased candidate for human review.**
+**Version 0.1.0 — released 14 September 2026.**
 
 Start with the [scientific reproduction note](docs/ML_REPRODUCTION_NOTE.md),
 [claim scorecard](forensics/reports/ML_CLAIM_SCORECARD.md) and
@@ -105,7 +105,7 @@ integrity check and explains why fresh publisher copies may have different bytes
 
 | Location | Contents |
 |---|---|
-| `docs/` | Main note, rerun guide, algorithm contract and candidate notes |
+| `docs/` | Main note, rerun guide, algorithm contract and release notes |
 | `src/hu2025_repro/`, `tests/` | Numerical analysis, untrained architecture specification and synthetic tests |
 | `scripts/`, `figures/derived/` | Deterministic figure builder and original analytical illustrations |
 | `data/derived/` | Computed metrics, reconstructed identities and classification decisions |
@@ -128,14 +128,22 @@ Original article: Hu, Y. et al. Identifying a highly efficient molecular photoca
 CO₂ reduction system via descriptor-based high-throughput screening. *Nature Catalysis*
 **8**, 126–136 (2025). [DOI](https://doi.org/10.1038/s41929-025-01291-z).
 
-Repository: Squiddy. *Hu 2025 Photocatalysis ML Reproduction*, version 0.1.0
-(unreleased review candidate). [Repository](https://github.com/angzeli/hu2025-photocat-ml-repro).
+Repository: Angze Li. *Hu 2025 Photocatalysis ML Reproduction*, version 0.1.0
+(2026). [Repository](https://github.com/angzeli/hu2025-photocat-ml-repro).
 [CITATION.cff](CITATION.cff) is the single canonical version declaration and supplies
-machine-readable repository and article citations. No release DOI or tag is claimed.
+machine-readable repository and article citations. The release tag is `v0.1.0`;
+no repository DOI is claimed.
 
 ## License
 
 [MIT](LICENSE) covers this repository's original code and documentation, including
 its analytical illustrations. Publisher/source materials are not distributed and
-are not relicensed. See the [candidate notes](docs/RELEASE_NOTES_v0.1.0.md) for scope,
+are not relicensed. See the [release notes](docs/RELEASE_NOTES_v0.1.0.md) for scope,
 limitations and validation.
+
+## Author
+
+**Angze Li** ([@angzeli](https://github.com/angzeli))
+
+This is an independent reproduction and analysis project and is not affiliated
+with the original authors or *Nature Catalysis*.

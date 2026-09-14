@@ -27,7 +27,7 @@ Manual content review is also required because a hash comparison alone cannot de
 a renamed table that has been reformatted. If original files are already committed,
 stop and report the affected history; do not silently rewrite it.
 
-The public candidate includes four original analytical figures as PNG/PDF pairs
+The public release includes four original analytical figures as PNG/PDF pairs
 under `figures/derived/`. They summarize committed aggregate results and never
 recreate the complete publisher scatter-point or measurement tables. The tracked
 [figure builder](../scripts/build_public_figures.py) reads only analytical summaries.

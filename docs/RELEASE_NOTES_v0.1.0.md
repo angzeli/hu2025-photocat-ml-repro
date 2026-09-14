@@ -1,22 +1,22 @@
-# v0.1.0 release candidate
+# v0.1.0 — Zero-compute ML reproduction
 
-Status: prepared for review, not a published release. [CITATION.cff](../CITATION.cff)
-is the canonical version declaration. No version tag, GitHub Release, package-registry
-publication or DOI deposit is created by this candidate.
+Release date: 2026-09-14. Author: **Angze Li**.
+[CITATION.cff](../CITATION.cff) is the canonical machine-readable version declaration.
 
 ## Scope
 
 Independent source-data reproduction and forensic reimplementation of the ML
 evaluation and downstream dipole-coupling/screening workflow in
 [Hu et al., Nature Catalysis (2025)](https://doi.org/10.1038/s41929-025-01291-z).
-The candidate packages completed analytical results with a
+This release packages completed analytical results with a
 [scientific note](ML_REPRODUCTION_NOTE.md), reproducible derived figures,
 [external-reader instructions](REPRODUCE.md), citation metadata and a scoped MIT
 license. It does not regenerate the underlying physical dataset or trained network.
 
 ## Major reproduced results
 
-- All 32 released scalar metric records reproduce to floating-point precision;
+- All 32 scalar metric records computed from released predictions agree with the
+  Phase-0 calculations to floating-point precision;
   vector magnitude, direction and residual analyses expose limitations concealed
   by pooled Cartesian correlations.
 - The recovered relation is `J = s*(-2*Cx*Px + Cy*Py + Cz*Pz)` with
@@ -24,8 +24,9 @@ license. It does not regenerate the underlying physical dataset or trained netwo
   Debye/cm⁻¹ and an effective separation of approximately 10.000035 Å are a
   conditional, non-unique physical interpretation, not disclosed author settings.
 - CAT/PS/cross prediction-error decomposition closes within approximately
-  `1.03e-12` for J and `1.34e-15` for J*. This exact algebra is distinct from the
-  small source-precision residuals against separately rounded Fig. 9 columns.
+  `1.03e-12` for J and `1.34e-15` for J*. This exact algebra is distinct from
+  comparisons against the separately released Fig. 9 columns, with rounding-compatible
+  residuals.
 - On the 1,000 released validation rows, J/J* Pearson correlations are
   0.912926/0.747549, predictive R² values 0.829605/0.558007, sign agreement
   74.7%/74.3%, and signed top-100 overlap 80/100 versus 65/100.
@@ -66,8 +67,8 @@ The [source policy](SOURCE_POLICY.md) remains in force, including for Git histor
 
 ## Validation
 
-The [local candidate validation record](../forensics/outputs/phase3_validation.json)
-records:
+The [historical Phase-3 validation record](../forensics/outputs/phase3_validation.json)
+documents the reviewed baseline before final release metadata changes:
 
 - 34/34 synthetic tests passed, including six publication-boundary regressions.
 - All three Phase-2 analyses passed; their outputs matched the committed Phase-2 bytes.
@@ -79,11 +80,18 @@ records:
   proposed content and reachable history, including the separately inspected local
   auxiliary objects. Figure exceptions require exact reviewed path/hash bindings.
 
-These are local candidate checks, not remote CI results, a published release or
-independent scientific approval. The reference Python and four direct dependency
+These are historical local checks, not remote CI results or independent scientific
+approval. The reference Python and four direct dependency
 pins are documented in [the reproduction guide](REPRODUCE.md) and
 [requirements.txt](../requirements.txt).
 
-No new molecular trajectory, quantum label or trained ML model is produced by this
-candidate. Final tagging and GitHub Release creation require separate authorization
-after human review.
+Final v0.1.0 local validation also passed all 34 tests and all three Phase-2 reruns,
+with unchanged analytical outputs. All eight regenerated figure files matched the
+reviewed bytes, and all 6,901 originals retained their hashes, sizes and modification
+times. Source/privacy checks of release content and reachable history reported zero
+findings. These checks are local evidence; no remote CI result is claimed.
+
+No MD, QM or TDDFT calculation was rerun, and no ML model was trained. The release
+reproduces the released ML evaluation and downstream mathematical workflow within
+the stated limits; original neural-network training remains unreproducible from
+the available evidence.
